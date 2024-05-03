@@ -23,9 +23,9 @@ const Footer = () => {
             </div>
 
             <LinkGroup header="Company" className="">
-              <NavLink link="/#" label="- About Us"/>
-              <NavLink link="/#" label="- People" />
-              <NavLink link="/#" label="- Career" />  
+              <NavLink link="/why-ils" label="- About Us"/>
+              <NavLink link="/people" label="- People" />
+              <NavLink link="/Career" label="- Career" />  
               <NavLink link="/#" label="- Contact" />
             </LinkGroup>
             <LinkGroup header="Solution">
