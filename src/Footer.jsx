@@ -25,20 +25,20 @@ const Footer = () => {
             <LinkGroup header="Company" className="">
               <NavLink link="/why-ils" label="- About Us"/>
               <NavLink link="/people" label="- People" />
-              <NavLink link="/Career" label="- Career" />  
+              <NavLink link="/career" label="- Career" />  
               <NavLink link="/#" label="- Contact" />
             </LinkGroup>
             <LinkGroup header="Solution">
-              <NavLink link="/#" label="- Private Equity" />
-              <NavLink link="/#" label="- Client Service" />
-              <NavLink link="/#" label="- Other Service" />
+              <NavLink link="/private-equity" label="- Private Equity" />
+              <NavLink link="/product-development" label="- Client Service" />
+              <NavLink link="/assessments" label="- Other Service" />
               {/* <NavLink link="/#" label="Setting & Privacy" /> */}
             </LinkGroup>
             <LinkGroup header="Education & Training">
-              <NavLink link="/#" label="- Skills Development Workshop" />
-              <NavLink link="/#" label="- Lean Systems Certification" />
-              <NavLink link="/#" label="- Executive Education" />
-              <NavLink link="/#" label="- Lean Leader Certificaiton" />
+              <NavLink link="/skill-development-workshops" label="- Skills Development Workshop" />
+              <NavLink link="/lean-system-certification" label="- Lean Systems Certification" />
+              <NavLink link="/executive-education" label="- Executive Education" />
+              <NavLink link="/lean-leader-certification" label="- Lean Leader Certificaiton" />
             </LinkGroup>
 
             {/* <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
