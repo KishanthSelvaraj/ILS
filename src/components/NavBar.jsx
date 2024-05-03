@@ -60,7 +60,7 @@ const NavBar = () => {
                     aria-labelledby="options-menu"
                   >
                     <a
-                      href="why-ils"
+                      href="/why-ils"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       role="menuitem"
                     >
@@ -256,7 +256,7 @@ const NavBar = () => {
                   >
                 
                     <a
-                      href="assessments"
+                      href="/assessments"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       role="menuitem"
                     >
