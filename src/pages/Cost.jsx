@@ -12,9 +12,14 @@ import { AiOutlineLineChart } from "react-icons/ai";
 import { GiMagnifyingGlass } from "react-icons/gi";
 import { IoIosRocket } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa6";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosWater, IoIosHammer, IoIosPhonePortrait } from "react-icons/io";
-import flow from "/flow.jpg";
+import flow from "/flow-2.jpg";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);
+
 import {
   IoIosWallet,
   IoIosCard,
@@ -95,6 +100,27 @@ const Cost = () => {
   const handleStepClick = (step) => {
     setActiveStep(step);
   };
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    // Animation for each div
+    gsap.utils.toArray(".animated").forEach((element) => {
+      gsap.fromTo(
+        element,
+        { opacity: 0, x: -100 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%",
+            end: "top 50%",
+            scrub: 1,
+          },
+        }
+      );
+    });
+  }, []);
   return (
     <div className="md:py-20 py-20">
       <div>
@@ -149,7 +175,7 @@ const Cost = () => {
         {/* Timeline Content Start */}
         <div>
           <div>
-            <h3 className="text-black text-center font-bold my-4 text-xl  md:text-xl lg:text-xl xl:text-3xl xxl:text-3xl">
+            <h3 className="text-black  text-center font-bold my-4 text-xl  md:text-xl lg:text-xl xl:text-3xl xxl:text-3xl">
               ILS Cost Containment Areas
             </h3>
           </div>
@@ -165,16 +191,16 @@ const Cost = () => {
                       key={feature.name}
                       className="relative pl-16 text-left "
                     >
-                      <dt className="text-base font-bold leading-7 text-gray-900 ">
-                        <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
+                      <dt className=" text-base font-bold leading-7 text-gray-900 ">
+                        <div className=" absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500">
                           <feature.icon
-                            className="h-6 w-6 text-white "
+                            className="animated h-6 w-6 text-white "
                             aria-hidden="true"
                           />
                         </div>
                         {feature.name}
                       </dt>
-                      <dd className="mt-2  text-sm leading-7 text-gray-600">
+                      <dd className="animated mt-2  text-sm leading-7 text-gray-600">
                         {feature.description}
                       </dd>
                     </div>
@@ -218,67 +244,67 @@ const Cost = () => {
               Cost Containment Areas - Other
             </h3>
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-              <div className="col py-3">
+              <div className="animated col py-3">
                 <div className="bg-white rounded-md shadow p-4 text-center square-card d-flex flex-column justify-content-center align-items-center">
                   <IoIosWallet className="w-16 h-16 mb-2  text-indigo-500" />
                   <p className="text-md mb-0">Bank Fees</p>
                 </div>
               </div>
-              <div className="col py-3">
+              <div className="animated col py-3">
                 <div className="bg-white rounded-md shadow p-4 text-center square-card d-flex flex-column justify-content-center align-items-center">
                   <IoIosWater className="w-16 h-16 mb-2 text-indigo-500" />
                   <p className="text-md mb-0">Energy Efficiency</p>
                 </div>
               </div>
-              <div className="col py-3">
+              <div className="animated col py-3">
                 <div className="bg-white rounded-md shadow p-4 text-center square-card d-flex flex-column justify-content-center align-items-center">
                   <IoIosHammer className="w-16 h-16 mb-2 text-indigo-500" />
                   <p className="text-md mb-0">Equipment Maintenance</p>
                 </div>
               </div>
-              <div className="col py-3">
+              <div className="animated col py-3">
                 <div className="bg-white rounded-md shadow p-4 text-center square-card d-flex flex-column justify-content-center align-items-center">
                   <IoIosCard className="w-16 h-16 mb-2 text-indigo-500" />
                   <p className="text-md mb-0">Merchant Card Fees</p>
                 </div>
               </div>
-              <div className="col py-3">
+              <div className="animated col py-3">
                 <div className="bg-white rounded-md shadow p-4 text-center square-card d-flex flex-column justify-content-center align-items-center">
                   <IoIosCar className="w-16 h-16 mb-2 text-indigo-500" />
                   <p className="text-md mb-0">Fleet Management</p>
                 </div>
               </div>
-              <div className="col py-3">
+              <div className="animated col py-3">
                 <div className="bg-white rounded-md shadow p-4 text-center square-card d-flex flex-column justify-content-center align-items-center">
                   <IoIosDesktop className="w-16 h-16 mb-2 text-indigo-500" />
                   <p className="text-md mb-0">Information Technology</p>
                 </div>
               </div>
-              <div className="col py-3">
+              <div className="animated col py-3">
                 <div className="bg-white rounded-md shadow p-4 text-center square-card d-flex flex-column justify-content-center align-items-center">
                   <IoIosPhonePortrait className="w-16 h-16 mb-2 text-indigo-500" />
                   <p className="text-md mb-0">Telecommunications</p>
                 </div>
               </div>
-              <div className="col py-3">
+              <div className="animated col py-3">
                 <div className="bg-white rounded-md shadow p-4 text-center square-card d-flex flex-column justify-content-center align-items-center">
                   <IoIosPaper className="w-16 h-16 mb-2 text-indigo-500" />
                   <p className="text-md mb-0">Office Supplies</p>
                 </div>
               </div>
-              <div className="col py-3">
+              <div className="animated col py-3">
                 <div className="bg-white rounded-md shadow p-4 text-center square-card d-flex flex-column justify-content-center align-items-center">
                   <IoIosPeople className="w-16 h-16 mb-2 text-indigo-500" />
                   <p className="text-md mb-0">Payroll Processing</p>
                 </div>
               </div>
-              <div className="col py-3">
+              <div className="animated col py-3">
                 <div className="bg-white rounded-md shadow p-4 text-center square-card d-flex flex-column justify-content-center align-items-center">
                   <IoIosPrint className="w-16 h-16 mb-2 text-indigo-500" />
                   <p className="text-md mb-0">Capital Projects</p>
                 </div>
               </div>
-              <div className="col py-3">
+              <div className="animated col py-3">
                 <div className="bg-white rounded-md shadow p-4 text-center square-card d-flex flex-column justify-content-center align-items-center">
                   <IoIosLock className="w-16 h-16 mb-2 text-indigo-500" />
                   <p className="text-md mb-0">
@@ -286,7 +312,7 @@ const Cost = () => {
                   </p>
                 </div>
               </div>
-              <div className="col py-3">
+              <div className="animated col py-3">
                 <div className="bg-white rounded-md shadow p-4 text-center square-card d-flex flex-column justify-content-center align-items-center">
                   <IoIosShirt className="w-16 h-16 mb-2 text-indigo-500" />
                   <p className="text-md mb-0">Uniforms & Linens</p>

@@ -13,6 +13,8 @@ import Manufacturing_8 from "/manufacturing-8.webp";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import flowChart from "/private-equity-flow.jpg";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -469,6 +471,17 @@ const PublicEquity = () => {
             </div>
           </div>
         </div>
+      </div>
+
+
+
+      <div className="">
+      <h3 className=" text-center text-black font-bold mt-lg-4 mt-2 text-xl  md:text-xl lg:text-xl xl:text-3xl xxl:text-3xl">
+      ILS 7-step deal flow process:
+</h3>
+<div className="container flex items-center justify-center">
+<img src={flowChart} alt="" className="lg:w-10/12 " />
+</div>
       </div>
 
       <div className="bg-white">
