@@ -14,7 +14,7 @@ import { IoIosRocket } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import { IoIosWater, IoIosHammer, IoIosPhonePortrait } from "react-icons/io";
-import flow from "/flow-2.jpg";
+import flow from "/flow2.jpg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 
