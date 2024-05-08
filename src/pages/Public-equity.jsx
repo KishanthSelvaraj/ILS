@@ -13,6 +13,11 @@ import Manufacturing_8 from "/manufacturing-8.webp";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const PublicEquity = () => {
@@ -37,14 +42,15 @@ const PublicEquity = () => {
       );
     });
   }, []);
+  const WorkIcon = () => <></>;
   return (
     <div className="py-24">
       <div className="container-fluid container-md">
         <div className="row flex justify-center items-center">
           <div className="col-12  col-lg-6 col-xl-6 col-xxl-6 py-sm-2 py-3">
             <p className="font-bold lg:text-[44px] md:text-[30px] sm:text-[26px] xl:text-[44px] text-[20px]">
-              ILS Helps Private Equity Clients Create Operational Value with
-              Acquisitions.
+              ILS helps Private Equity clients create operational value with
+              acquisitions.
             </p>
           </div>
           <div className="col-12 col-lg-6 col-xl-6 col-xxl-6 py-sm-5 py-3 flex items-center">
@@ -101,10 +107,10 @@ const PublicEquity = () => {
           <div className="col-12 col-lg-6 col-xl-6 col-xxl-6 py-sm-5">
             <div className="animated  md:px-5 px-2 py-2.5">
               <h4 className="font-bold text-3xl">
-                Driving Operational Excellence and <br /> Value Creation
+                Driving operational excellence and <br /> value creation
               </h4>
               <h5 className="font-semibold text-lg text-[#88969A]">
-                Innovative Process Designs for Superior Performance
+                Innovative process designs for superior performance
               </h5>
             </div>
             <div className="md:px-5 px-2">
@@ -137,12 +143,116 @@ const PublicEquity = () => {
           </div>
         </div>
       </div>
+      {/* vertical timeline start */}
+      <h3 className="animated text-center font-bold text-3xl">
+        Unlocking business potential: Beyond EBITDA metrics{" "}
+      </h3>
+      <VerticalTimeline>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          // date="2011 - present"
+          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
+          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
+          <p>
+            We strengthen the operations management process and team, enabling
+            them to consistently meet demanding performance goals and to solve
+            problems quickly and systematically.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          // date="2011 - present"
+          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
+          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
+          <p>
+            We resolve, once and for all, the nagging, persistent operational
+            problems that have been holding operations back
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          // date="2011 - present"
+          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
+          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
+          <p>
+            We build internal skills and capability to sustain lean operations
+            and to continue with an aggressive continuous improvement program
+            throughout the ownership cycle{" "}
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          // date="2011 - present"
+          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
+          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
+          <p>
+            Our scope of improvement is by no means limited to direct production
+            or service operations. We address office processes, accounting,
+            sales, procurement, IT, inventory management, engineering and
+            product development, maintenance, logistics, supply chain, etc.{" "}
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          // date="2011 - present"
+          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
+          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
+          <p>
+            he goal is total enterprise transformation and it is critical to
+            address the most critical and/or wasteful direct and supporting
+            value streams.{" "}
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          // date="2011 - present"
+          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
+          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
+          <p>
+            Our goal is to continue in long term partnership with the acquired
+            company after their sale is complete as a trusted advisor where we
+            continue to learn together and make improvements that create higher
+            levels of operational performance and value delivery.{" "}
+          </p>
+        </VerticalTimelineElement>
+      </VerticalTimeline>
+      {/* vertical timeline end */}
 
       {/* Third Layout Start */}
-      <div className="container-md container-fluid py-md-5 py-3 md:px-20 px-5">
+      {/* <div className="container-md container-fluid py-md-5 py-3 md:px-20 px-5">
         <div>
           <h3 className="animated  text-center font-bold text-3xl">
-            Unlocking Business Potential: Beyond EBITDA Metrics
+            Unlocking business potential: Beyond EBITDA metrics
           </h3>
         </div>
         <div>
@@ -185,7 +295,7 @@ const PublicEquity = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Third Layout End */}
 
       {/* Fourth layout Start */}
@@ -196,7 +306,7 @@ const PublicEquity = () => {
               Our Approach
             </h3>
             <p className="animated text-center text-[#88969A] md:px-40 py-3">
-              We apply ILS System™ using a special version that has been
+              We apply ILS System using a special version that has been
               specially designed to meet the needs of our private equity
               clients. This methodical approach is designed to:
             </p>
@@ -211,7 +321,7 @@ const PublicEquity = () => {
                     </div>
 
                     <h2 className="text-lg font-semibold">
-                      Maximize Operational Performance and Value
+                      Maximize operational performance and value
                     </h2>
                   </div>
                   <p className="text-gray-700">
@@ -287,7 +397,7 @@ const PublicEquity = () => {
                       <MdOutlineManageSearch />
                     </div>
                     <h2 className="text-xl font-semibold  ">
-                      Project Management Excellence
+                      Project management excellence
                     </h2>
                   </div>
                   <p className="text-gray-700">
@@ -374,7 +484,7 @@ const PublicEquity = () => {
             </div>
             <div className="animated col col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 lg:p-10">
               <h3 className="text-[#000000] font-bold text-xl mt-4 md:text-2xl lg:text-2xl xl:text-2xl xxl:text-2xl">
-                Operational Problem Solving
+                Operational problem solving
               </h3>
               <p className="text-[#88969A] font-semibold pt-2 text-justify">
                 Company X is an acquisition of a major private equity firm. ILS
@@ -383,7 +493,7 @@ const PublicEquity = () => {
                 barrier to success for its large aftermarket division. The
                 problems included:
               </p>
-              <ul>
+              <ul className="mt-3">
                 <li className="mt-3">
                   Parts were high variety with complex routings. Much time was
                   spent changing over certain processes that capacity needs
@@ -397,7 +507,7 @@ const PublicEquity = () => {
                 </li>
               </ul>
               <div className=" ">
-                <button className="text-center text-white bg-[#788488] p-4  rounded-lg mt-3.5 mb-5 hover:bg-[#6c7a7e] hover:shadow-lg transition duration-300 ">
+                <button className="text-center text-white bg-[#788488] p-2 rounded-lg mt-3.5 mb-5 hover:bg-[#6c7a7e] hover:shadow-lg transition duration-300">
                   Learn More <i className="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
@@ -472,7 +582,7 @@ const PublicEquity = () => {
           <div className="row">
             <div className="animated col col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 lg:p-10">
               <h3 className="text-[#000000] font-bold text-xl mt-4 md:text-2xl lg:text-2xl xl:text-2xl xxl:text-2xl">
-                Enhanced Scheduling Process Improves Performance
+                Enhanced scheduling process improves performance
               </h3>
               <p className="text-[#88969A] font-semibold pt-2 text-justify">
                 The implementation of an enhanced scheduling process has

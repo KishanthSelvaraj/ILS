@@ -26,32 +26,17 @@ import {
   IoIosShirt,
   IoIosPrint,
 } from "react-icons/io";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+const WorkIcon = () => <></>;
+
 const Cost = () => {
   const features = [
-    {
-      name: "Direct Materials",
-      description:
-        "Develop strong leadership skills to guide your team through the lean transformation journey with confidence and efficiency.",
-      icon: MdOutlineSupport,
-    },
-    {
-      name: "MRO/Factory Consumables",
-      description:
-        "Standardization to simplify inventory management allowing for better control over maintenance and repair expenses.",
-      icon: RiHandCoinFill,
-    },
-    {
-      name: "Insurance",
-      description:
-        "Comprehensive coverage for business operations and employee benefits, protecting against unforeseen risks while supporting staff.",
-      icon: IoSpeedometer,
-    },
-    {
-      name: "Freight (LTL, TL, International)/ Logistics",
-      description:
-        " Negotiation of favorable rates and contracts with freight carriers to minimize transportation expenses.",
-      icon: IoShuffleOutline,
-    },
+   
+    
   ];
 
   const features1 = [
@@ -78,6 +63,30 @@ const Cost = () => {
       description:
         "ILS empowers employees to identify various ways for waste reduction and participate actively in waste management initiatives",
       icon: FaArrowRight,
+    },
+    {
+      name: "Direct Materials",
+      description:
+        "Develop strong leadership skills to guide your team through the lean transformation journey with confidence and efficiency.",
+      icon: MdOutlineSupport,
+    },
+    {
+      name: "MRO/Factory Consumables",
+      description:
+        "Standardization to simplify inventory management allowing for better control over maintenance and repair expenses.",
+      icon: RiHandCoinFill,
+    },
+    {
+      name: "Insurance",
+      description:
+        "Comprehensive coverage for business operations and employee benefits, protecting against unforeseen risks while supporting staff.",
+      icon: IoSpeedometer,
+    },
+    {
+      name: "Freight (LTL, TL, International)/ Logistics",
+      description:
+        " Negotiation of favorable rates and contracts with freight carriers to minimize transportation expenses.",
+      icon: IoShuffleOutline,
     },
   ];
 
@@ -145,42 +154,7 @@ const Cost = () => {
             </h3>
           </div>
           <div className="flex items-center justify-center md:mt-5">
-            <div className="flex items-center">
-              <div
-                className={"step hover:cursor-pointer"}
-                onClick={() => handleStepClick(1)}
-              >
-                <span
-                  className={`text-sm relative inline-block ${
-                    activeStep === 1
-                      ? "bg-indigo-500 rounded-full text-white"
-                      : ""
-                  }`}
-                >
-                  <span className="border border-black w-5 h-5 p-2 rounded-full flex items-center justify-center">
-                    1
-                  </span>
-                </span>{" "}
-              </div>
-
-              <div className="connector h-0.5 md:w-96 w-40 bg-indigo-500"></div>
-              <div
-                className={"step hover:cursor-pointer"}
-                onClick={() => handleStepClick(2)}
-              >
-                <span
-                  className={`text-sm relative inline-block ${
-                    activeStep === 2
-                      ? "bg-indigo-500 rounded-full text-white"
-                      : ""
-                  }`}
-                >
-                  <span className="border border-black w-5 h-5 p-2 rounded-full flex items-center justify-center">
-                    2
-                  </span>
-                </span>{" "}
-              </div>
-            </div>
+          
           </div>
           <div className="ml-4">
             {activeStep === 1 && (
@@ -200,7 +174,7 @@ const Cost = () => {
                         </div>
                         {feature.name}
                       </dt>
-                      <dd className="mt-2 text-base text-sm leading-7 text-gray-600">
+                      <dd className="mt-2  text-sm leading-7 text-gray-600">
                         {feature.description}
                       </dd>
                     </div>
@@ -225,7 +199,7 @@ const Cost = () => {
                         </div>
                         {feature.name}
                       </dt>
-                      <dd className="mt-2 text-base text-sm leading-7 text-gray-600">
+                      <dd className="mt-2  text-sm leading-7 text-gray-600">
                         {feature.description}
                       </dd>
                     </div>
@@ -253,7 +227,7 @@ const Cost = () => {
               <div className="col py-3">
                 <div className="bg-white rounded-md shadow p-4 text-center square-card d-flex flex-column justify-content-center align-items-center">
                   <IoIosWater className="w-16 h-16 mb-2 text-indigo-500" />
-                  <p className="text-md mb-0">Cleaning Services & Supplies</p>
+                  <p className="text-md mb-0">Energy Efficiency</p>
                 </div>
               </div>
               <div className="col py-3">
@@ -301,7 +275,7 @@ const Cost = () => {
               <div className="col py-3">
                 <div className="bg-white rounded-md shadow p-4 text-center square-card d-flex flex-column justify-content-center align-items-center">
                   <IoIosPrint className="w-16 h-16 mb-2 text-indigo-500" />
-                  <p className="text-md mb-0">Printing</p>
+                  <p className="text-md mb-0">Capital Projects</p>
                 </div>
               </div>
               <div className="col py-3">
@@ -330,107 +304,107 @@ const Cost = () => {
           <div className="container flex items-center justify-center">
             <img src={flow} alt="" className="lg:w-10/12" />
           </div>
-          <div className="container-md container-fluid">
-            <div className="md:py-10 py-6">
-              <div className="row">
-                <div className="col-12 col-md-6 col-lg-6 col-xl-6 xl-xxl-6">
-                  <div className="flex items-center">
-                    <div className="w-6 h-6 mr-2 bg-blue-500 text-white rounded-full flex items-center justify-center">
-                      1
-                    </div>
-                   
-                  </div>
-                  <p className="text-md pt-3">
-                    Gathering data from customers and suppliers is crucial for
-                    informed decision-making. Customer data provides insights
-                    into preferences, behaviors, and satisfaction levels,
-                    guiding product/service enhancements and fostering loyalty.{" "}
-                  </p>
-                </div>
-                <div className="col-12 col-md-6 col-lg-6 col-xl-6 xl-xxl-6 mt-2 sm:mt-0">
-                  <div className="flex items-center">
-                    <div className="w-6 h-6 mr-2 bg-blue-500 text-white rounded-full flex items-center justify-center">
-                      2
-                    </div>
-                   
-                  </div>
-                  <p className="text-md  pt-3">
-                    Functional Analysts are pivotal in conducting analysis
-                    within organizations. Their expertise lies in dissecting
-                    complex systems, processes, and requirements to derive
-                    actionable insights.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="row">
-                <div className="col-12 col-md-6 col-lg-6 col-xl-6 xl-xxl-6 mt-2 sm:mt-0">
-                  <div className="flex items-center">
-                    <div className="w-6 h-6 mr-2 bg-blue-500 text-white rounded-full flex items-center justify-center">
-                      3
-                    </div>
-                    
-                  </div>
-                  <p className="text-md pt-3">
-                    In procurement, qualifying vendors and managing auction
-                    processes are critical tasks. Vendor qualification involves
-                    assessing supplier capabilities, reliability, and compliance
-                    with organizational standards.
-                  </p>
-                </div>
-                <div className="col-12 col-md-6 col-lg-6 col-xl-6 xl-xxl-6 mt-2 sm:mt-0">
-                  <div className="flex items-center">
-                    <div className="w-6 h-6 mr-2 bg-blue-500 text-white rounded-full flex items-center justify-center">
-                      4
-                    </div>
-                    
-                  </div>
-                  <p className="text-md pt-3">
-                    Reporting out is a crucial aspect of project management,
-                    involving the communication of project progress, findings,
-                    and insights to stakeholders. This process ensures
-                    transparency, accountability, and alignment with project
-                    goals.
-                  </p>
-                </div>
-              </div>
-              <div className="row sm:mt-5">
-                
-              <div className="col-12 col-md-6 col-lg-6 col-xl-6 xl-xxl-6 mt-2 sm:mt-0">
-                  <div className="flex items-center">
-                    <div className="w-6 h-6 mr-2 bg-blue-500 text-white rounded-full flex items-center justify-center">
-                      5
-                    </div>
-                    
-                  </div>
-                  <p className="text-md pt-3">
-                    Executing changes with either the existing vendor or a new
-                    vendor, selected by the customer, necessitates a strategic
-                    approach and seamless collaboration. With an existing
-                    vendor, leveraging established relationships and mutual
-                    understanding accelerates the implementation process.{" "}
-                  </p>
-                </div>
-                <div className="col-12 col-md-6 col-lg-6 col-xl-6 xl-xxl-6 mt-2 sm:mt-0">
-                  <div className="flex items-center">
-                    <div className="w-6 h-6 mr-2 bg-blue-500 text-white rounded-full flex items-center justify-center">
-                      6
-                    </div>
-                   
-                  </div>
-                  <p className="text-md pt-3">
-                    Sustaining savings over a two-year term or more, as per
-                    customer request, requires implementing regular audits as a
-                    proactive measure. These audits serve to monitor and
-                    evaluate the effectiveness of cost-saving initiatives,
-                    ensuring continued efficiency and adherence to budgetary
-                    goals.{" "}
-                  </p>{" "}
-                </div>
-              </div>
-            </div>
-          </div>
+           {/* vertical timeline start */}
+ 
+      <VerticalTimeline>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          // date="2011 - present"
+          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
+          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
+          <p>
+          Gathering data from customers and suppliers is crucial for informed decision-making. Customer data provides insights into preferences, behaviors, and satisfaction levels, guiding product/service enhancements and fostering loyalty.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          // date="2011 - present"
+          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
+          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
+          <p>
+          Functional Analysts are pivotal in conducting analysis within organizations. Their expertise lies in dissecting complex systems, processes, and requirements to derive actionable insights.
+
+</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          // date="2011 - present"
+          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
+          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
+          <p>
+          In procurement, qualifying vendors and managing auction processes are critical tasks. Vendor qualification involves assessing supplier capabilities, reliability, and compliance with organizational standards.
+
+</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          // date="2011 - present"
+          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
+          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
+          <p>
+          Reporting out is a crucial aspect of project management, involving the communication of project progress, findings, and insights to stakeholders. This process ensures transparency, accountability, and alignment with project goals.
+
+
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          // date="2011 - present"
+          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
+          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
+          <p>
+          Executing changes with either the existing vendor or a new vendor, selected by the customer, necessitates a strategic approach and seamless collaboration. With an existing vendor, leveraging established relationships and mutual understanding accelerates the implementation process.
+
+
+
+
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          // date="2011 - present"
+          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
+          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
+          <p>
+          Sustaining savings over a two-year term or more, as per customer request, requires implementing regular audits as a proactive measure. These audits serve to monitor and evaluate the effectiveness of cost-saving initiatives, ensuring continued efficiency and adherence to budgetary goals.
+
+
+
+
+          </p>
+        </VerticalTimelineElement>
+      </VerticalTimeline>
+      {/* vertical timeline end */}
         </div>
       </div>
     </div>
