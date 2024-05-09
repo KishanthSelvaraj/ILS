@@ -52,18 +52,6 @@ const Cost = () => {
       icon: FaArrowUpShortWide,
     },
     {
-      name: "Energy Efficiency",
-      description:
-        "At ILS, we recognize the importance of energy efficiency in controlling operational costs and reducing our environmental footprint",
-      icon: AiOutlineLineChart,
-    },
-    {
-      name: "Capital Projects",
-      description:
-        "Handling capital projects often involve investments in new technologies that can improve operational efficiency.",
-      icon: GiMagnifyingGlass,
-    },
-    {
       name: "Waste Management",
       description:
         "ILS empowers employees to identify various ways for waste reduction and participate actively in waste management initiatives",
