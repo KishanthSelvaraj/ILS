@@ -54,7 +54,7 @@ const LeanLeader = () => {
       <div className="animated mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4  sm:px-6 py-3 sm:py-8 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <ol className="relative border-s border-gray-200 dark:border-gray-700 ml-5    py-5">
           <li className="animated mb-6 ms-4 ">
-            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1 -start-6 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1 -start-8 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
             {/* <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
            
           </time> */}
@@ -70,7 +70,7 @@ const LeanLeader = () => {
             </p>
           </li>
           <li className="animated animated mb-6 ms-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
 
             <h3 className="mb-4 text-xl font-bold text-black">
               Leadership the Lean Way:
@@ -83,7 +83,7 @@ const LeanLeader = () => {
             </p>
           </li>
           <li className="animated ms-4 mb-6">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
 
             <h3 className="mb-4 text-xl font-bold text-black">
               The Lean Enterprise:
@@ -140,7 +140,7 @@ const LeanLeader = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div className="bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer  hover:border-gray-900">
                   <div className="animated flex text-2xl items-center gap-3 mb-3">
-                    <div className="bg-indigo-600 text-white rounded-full p-2">
+                    <div className="bg-[#007dbd] text-white rounded-full p-2">
                       <IoIosTimer />
                     </div>
 
@@ -156,7 +156,7 @@ const LeanLeader = () => {
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer hover:border-gray-900">
                   <div className="animated flex text-2xl items-center gap-3 mb-3">
-                    <div className="bg-indigo-600 text-white rounded-full p-2">
+                    <div className="bg-[#007dbd] text-white rounded-full p-2">
                       <GrWorkshop />
                     </div>
                     <h2 className="text-xl font-semibold  ">
@@ -171,7 +171,7 @@ const LeanLeader = () => {
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer">
                   <div className="animated flex text-2xl items-center gap-3 mb-3">
-                    <div className="bg-indigo-600 text-white rounded-full p-2">
+                    <div className="bg-[#007dbd] text-white rounded-full p-2">
                       <TbBulb />
                     </div>
                     <h2 className="text-xl font-semibold  ">

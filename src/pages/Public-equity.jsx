@@ -46,7 +46,7 @@ const PublicEquity = () => {
   }, []);
   const WorkIcon = () => <></>;
   return (
-    <div className="py-24">
+    <div className="pt-24">
       <div className="container-fluid container-md">
         <div className="row flex justify-center items-center">
           <div className="col-12  col-lg-6 col-xl-6 col-xxl-6 py-sm-2 py-3">
@@ -70,7 +70,7 @@ const PublicEquity = () => {
           <div className="bg-[#1E2634] py-md-5">
             <div className="animated  row text-center sm:py-10 py-28">
               <h3 className="text-[#88969A] font-bold text-3xl pb-3">
-                How We Work
+                How we work
               </h3>
               <p className="text-[white] text-md  lg:px-56 md:px-36 mt-2 sm:px-20 px-10">
                 The creation and application of creative process designs for the
@@ -426,7 +426,7 @@ const PublicEquity = () => {
         <div className="md:grid grid-cols-3 gap-4">
           <div className="animated m-lg-4 p-lg-6 m-2 p-2 bg-white  rounded-lg shadow-md py-4">
             <div className="flex justify-between flex-col text-center">
-              <div className="flex self-center text-5xl text-blue-600">
+              <div className="flex self-center text-5xl text-[#007dbd]">
                 <FaBookReader />
               </div>
               <h1 className="lg:text-2xl text-lg my-3 text-center font-bold">
@@ -441,7 +441,7 @@ const PublicEquity = () => {
 
           <div className="animated animated m-lg-4 p-lg-6 m-2 p-2 bg-white  rounded-lg shadow-md py-4">
             <div className="flex justify-between flex-col  text-center">
-              <div className="text-5xl flex self-center text-blue-600">
+              <div className="text-5xl flex self-center text-[#007dbd]">
                 <SiLevelsdotfyi />
               </div>
               <h1 className="lg:text-2xl text-lg my-3 text-center font-bold">
@@ -457,7 +457,7 @@ const PublicEquity = () => {
 
           <div className="animated  m-lg-4 p-lg-6 m-2 p-2 bg-white  rounded-lg shadow-md py-4">
             <div className="flex justify-between flex-col text-center">
-              <div className="flex self-center text-5xl text-blue-600 text-center">
+              <div className="flex self-center text-5xl text-[#007dbd] text-center">
                 <FaAssistiveListeningSystems />
               </div>
               <h1 className="lg:text-2xl text-lg my-3 text-center  font-bold">
@@ -520,9 +520,9 @@ const PublicEquity = () => {
                 </li>
               </ul>
               <div className=" ">
-                <button className="text-center text-white bg-[#788488] p-2 rounded-lg mt-3.5 mb-5 hover:bg-[#6c7a7e] hover:shadow-lg transition duration-300">
+                {/* <button className="text-center text-white bg-[#788488] p-2 rounded-lg mt-3.5 mb-5 hover:bg-[#6c7a7e] hover:shadow-lg transition duration-300">
                   Learn More <i className="fa-solid fa-arrow-right"></i>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -591,7 +591,7 @@ const PublicEquity = () => {
 
       <div className="bg-white">
         {/* Help your bussiness code start */}
-        <div className="container lg:px-20 xl:px-20 md:p-14 p-8">
+        <div className="container lg:px-20 xl:px-20 md:p-14 p-8 ">
           <div className="row">
             <div className="animated col col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 lg:p-10">
               <h3 className="text-[#000000] font-bold text-xl mt-4 md:text-2xl lg:text-2xl xl:text-2xl xxl:text-2xl">
@@ -623,9 +623,9 @@ const PublicEquity = () => {
                 </li>
               </ul>
               <div className="animated  ">
-                <button className="text-center text-white bg-[#788488] p-2 rounded-lg mt-3.5 mb-5 hover:bg-[#6c7a7e] hover:shadow-lg transition duration-300">
+                {/* <button className="text-center text-white bg-[#788488] p-2 rounded-lg mt-3.5 mb-5 hover:bg-[#6c7a7e] hover:shadow-lg transition duration-300">
                   Learn More <i className="fa-solid fa-arrow-right"></i>
-                </button>
+                </button> */}
               </div>
             </div>
             <div className="col col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 flex justify-center items-center">

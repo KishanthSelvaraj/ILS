@@ -285,7 +285,7 @@ const App = () => {
                 <img
                   src={IE5}
                   alt="Industry Experience 1"
-                  className="w-16 h-16 mb-2"
+                  className="w-16 h-16 mb-2 "
                 />
                 <p className="text-sm mb-0">Distribution and Warehousing</p>
               </div>
@@ -380,7 +380,7 @@ const App = () => {
 
           <div className="col col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 lg:p-10 ">
             <h3 className="text-black font-bold  mt-4 text-xl md:text-2xl lg:text-2xl sm:text-xl xxl:text-3xl">
-              How Can We Help Your <br /> Business?
+              How can we help your <br /> business?
             </h3>
             <p className="text-gray-500  py-4 text-justify">
               Our seasoned lean experts are dedicated to fostering a culture of
@@ -391,9 +391,9 @@ const App = () => {
               operational excellence and lasting transformation.
             </p>
             <div className=" ">
-              <button className="text-center text-white bg-[#88969A] p-2 rounded-lg mt-3.5 mb-5 hover:bg-[#6c7a7e] hover:shadow-lg transition duration-300">
+              {/* <button className="text-center text-white bg-[#88969A] p-2 rounded-lg mt-3.5 mb-5 hover:bg-[#6c7a7e] hover:shadow-lg transition duration-300">
                 Learn More <i className="fa-solid fa-arrow-right"></i>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
@@ -406,11 +406,10 @@ const App = () => {
               TRUSTED BY LEADERS
             </h3>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 pb-16 pt-6 sm:gap-2 sm:justify-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 pb-16 pt-6 sm:gap-2 sm:justify-center">
             {[
               homePartnerImage1,
               homePartnerImage2,
-              homePartnerImage3,
               homePartnerImage4,
               homePartnerImage5,
             ].map((partnerImage, index) => (

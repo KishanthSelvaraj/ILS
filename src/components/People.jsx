@@ -135,6 +135,77 @@ const AboutPeople = () => {
             </p>
           </div>
         </div>
+        <div className="animated row">
+          <div className="col-12 col-sm-12 col-md-6 flex justify-center items-center rounded-md">
+            <img
+              src={Leaders1}
+              alt="Leader 1 Image"
+              className="w-3/4 h-auto lg:p-4 border-none my-3"
+            />
+          </div>
+          <div className="col-12 col-sm-12 col-md-6 lg:p-4">
+            <h3 className="text-blacktext-xl mt-4 md:text-2xl lg:text-2xl xl:text-2xl xxl:text-2xl font-semibold">
+              Parthi Damodaraswamy
+            </h3>
+            <p className="text-[#88969A] font-semibold">
+              Chief Executive Officer
+            </p>
+            <p className="text-black pt-2 text-justify">
+              Parthi Damodaraswamy is ILS's co-founder and CEO, responsible for
+              providing direction and leadership to develop the company into a
+              top partner. He has expertise in the health care, wood, glass,
+              plastics, food processing, and distribution sectors, and has
+              assisted private equity firms in building value. He is qualified
+              as a manufacturing systems engineer with a B.S., M.S., and M.S. in
+              biomedical engineering. Parthi's contributions extend beyond
+              individual organizations; he has also played a key role in
+              assisting private equity firms in enhancing the value of their
+              investments.His insights and guidance have been instrumental in
+              optimizing operational efficiencies, identifying growth
+              opportunities, and maximizing returns for stakeholders.
+            </p>
+            <p className="md:px-2 lg:px-2 text-blue-500 font-semibold cursor-pointer text-md flex gap-3 py-3">
+              <i className="fab fa-facebook"></i>{" "}
+              <i className="fab fa-linkedin"></i>{" "}
+              <i className="fab fa-twitter"></i>{" "}
+            </p>
+          </div>
+        </div>
+        <div className="animated row">
+          <div className="col-12 col-sm-12 col-md-6 flex justify-center items-center rounded-md">
+            <img
+              src={Leaders2}
+              alt="Leader 2 Image"
+              className="w-3/4 h-auto lg:p-4 border-none my-3"
+            />
+          </div>
+          <div className="col-12 col-sm-12 col-md-6 lg:p-4">
+            <h3 className="text-blacktext-xl mt-4 md:text-2xl lg:text-2xl xl:text-2xl xxl:text-2xl font-semibold">
+              Ray Littlefield{" "}
+            </h3>
+            <p className="text-[#88969A] font-semibold">
+              Managing Director, Australia & Asia
+            </p>
+            <p className="text-black pt-2 text-justify">
+              Ray has been actively involved in Lean since 1997, beginning his
+              career as a production engineering trainee at Toyota Motor
+              Manufacturing Kentucky (TMMK). He has led several lean
+              transformation programs in different industries, engaging at all
+              levels from front line team members to CEOs. He holds
+              certifications in Lean Systems, Human Systems for Lean (Toyota
+              Culture), Lean Accounting, Toyota Production Systems and Toyota
+              ProblemSolving.Ray's commitment to Lean principles is further
+              underscored by his extensive certifications. He is certified in
+              Lean Systems, which encompasses a comprehensive understanding of
+              Lean methodologies and tools.
+            </p>
+            <p className="md:px-2 lg:px-2 text-blue-500 font-semibold cursor-pointer text-md flex gap-3 py-3">
+              <i className="fab fa-facebook"></i>{" "}
+              <i className="fab fa-linkedin"></i>{" "}
+              <i className="fab fa-twitter"></i>{" "}
+            </p>
+          </div>
+        </div>
         {/* Help your business code end */}
       </div>
 
@@ -158,9 +229,9 @@ const AboutPeople = () => {
                 work, creating positive, long-lasting value with the latest
                 technology.
               </p>
-              <button className="d-md-inline text-white text-xs mt-3 border p-1 rounded-full hover:text-black border-gray-400">
+              {/* <button className="d-md-inline text-white text-xs mt-3 border p-1 rounded-full hover:text-black border-gray-400">
                 See All Resources <i className="fa-solid fa-arrow-right"></i>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

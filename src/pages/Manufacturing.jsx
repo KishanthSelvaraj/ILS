@@ -6,9 +6,10 @@ import Manufacturing_2 from "/manufacturing-2.webp";
 import Manufacturing_3 from "/manufacturing-3.webp";
 import Manufacturing_4 from "/manufacturing-4.jpeg";
 import Manufacturing_5 from "/manufacturing-5.webp";
-import Manufacturing_6 from "/manufacturing-6.jpeg";
-import Manufacturing_7 from "/manufacturing-7.webp";
-import Manufacturing_8 from "/manufacturing-8.webp";
+import Manufacturing_6 from "/Manufacturing_6.jpg";
+import Manufacturing_61 from "/manufacturing-6.jpeg";
+import Manufacturing_7 from "/Manufacturing_7.jpg";
+import Manufacturing_8 from "/Manufacturing_8.jpg";
 import Manufacturing_9 from "/manufacturing-9.webp";
 import Manufacturing_10 from "/manufacturing-10.jpeg";
 import tl1 from "/tl1.jpg";
@@ -199,16 +200,15 @@ const Manufacturing = () => {
           </p>
         </div>
 
-        <div className="lg:flex ">
+        <div className="lg:flex grid grid-cols-4">
           <div className="animated max-w-[300px] md:max-w-[500px] rounded overflow-hidden shadow-lg m-4">
-            <img className="w-full" src={Manufacturing_4} alt="Image 1" />
+            <img className="w-full" src={Manufacturing_61} alt="Image 2" />
             <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">Market Research</div>
+              <div className="font-bold text-xl mb-2"> Customer Support</div>
               <p className="text-gray-700 text-base">
                 Conduct thorough market research to understand your target
                 audience and their pain points. Identify the specific needs,
-                desires, and challenges they have that your product or service
-                can address.
+                desires, and challenges your product and services
               </p>
             </div>
           </div>
@@ -311,7 +311,7 @@ const Manufacturing = () => {
       <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4  sm:px-6 py-5 sm:py-8 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <ol className="relative border-s border-gray-200 dark:border-gray-700 ml-5    py-5">
           <li className="animated mb-6 ms-4 ">
-            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white  "></div>
             {/* <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
            
           </time> */}
@@ -326,24 +326,24 @@ const Manufacturing = () => {
             </p>
           </li>
           <li className="animated  mb-6 ms-4">
-            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white  "></div>
 
             <h3 className="mb-4 text-xl font-bold text-black">
               Lean tools implementation
             </h3>
-            <p className=" text-base font-normal text-gray-500 dark:text-gray-400 mb-2">
+            <p className=" text-base font-normal text-gray-500  mb-2">
               We help you implement key lean tools (5S, standardized work, etc.)
               to transform operations. We tackle even complex applications, like
               reducing downtime to zero in machining cells.
             </p>
           </li>
           <li className="animated  ms-4 mb-6">
-            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white  "></div>
 
             <h3 className="mb-4 text-xl font-bold text-black">
               Detailed Work Design
             </h3>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400 mb-2">
+            <p className="text-base font-normal text-gray-500  mb-2">
               We partner with leaders to identify and eliminate productivity
               blockers. Our process leads to creative solutions with high impact
               (30-40% gains in efficiency). Examples include flex-work for
@@ -351,24 +351,24 @@ const Manufacturing = () => {
             </p>
           </li>
           <li className="animated  ms-4 mb-6">
-            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white  "></div>
 
             <h3 className="mb-4 text-xl font-bold text-black">
               Facility layout
             </h3>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400 mb-2">
+            <p className="text-base font-normal text-gray-500  mb-2">
               Efficient internal logistics & supervision. Flexible workload
               management (e.g., one worker running multiple
               machines).Adaptability to changing production needs.
             </p>
           </li>
           <li className="animated  ms-4 mb-6 xl:mx-10">
-            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white "></div>
 
             <h3 className="mb-4 text-xl font-bold text-black">
               Internal logistics and material flow
             </h3>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400 mb-2">
+            <p className="text-base font-normal text-gray-500  mb-2">
               Smooth material flow with minimal waste. Reduced transportation
               time (minimizing `deadheading`). Pull systems, level scheduling,
               and kitting for high-variety production.

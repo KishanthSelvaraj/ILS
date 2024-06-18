@@ -49,7 +49,7 @@ export default function Example() {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Announcing our client services.{" "}
-              <a href="#" className="font-semibold text-indigo-600">
+              <a href="#" className="font-semibold text-[#007dbd]">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
@@ -73,7 +73,7 @@ export default function Example() {
         <div className="animated md:grid grid-cols-3 gap-4">
           <div className="m-4 p-6 bg-white  rounded-lg shadow-md ">
             <div className="flex justify-between flex-col text-center">
-              <div className="flex self-center text-5xl text-indigo-600">
+              <div className="flex self-center text-5xl text-[#007dbd]">
                 <FaBookReader />
               </div>
               <h1 className="text-2xl my-3 text-center font-bold">Connected</h1>
@@ -86,7 +86,7 @@ export default function Example() {
 
           <div className="m-4 p-6 bg-white  rounded-lg shadow-md">
             <div className="flex justify-between flex-col  text-center">
-              <div className="text-5xl flex self-center text-indigo-600">
+              <div className="text-5xl flex self-center text-[#007dbd]">
                 <SiLevelsdotfyi />
               </div>
               <h1 className="text-2xl my-3 text-center font-bold">Inclusive</h1>
@@ -99,7 +99,7 @@ export default function Example() {
 
           <div className="m-4 p-6 bg-white  rounded-lg shadow-md">
             <div className="flex justify-between flex-col text-center">
-              <div className="flex self-center text-5xl text-indigo-600 text-center">
+              <div className="flex self-center text-5xl text-[#007dbd] text-center">
                 <FaAssistiveListeningSystems />
               </div>
               <h1 className="text-2xl my-3 text-center  font-bold">Flexible</h1>
@@ -139,14 +139,14 @@ export default function Example() {
         <div className="animated mb-8 flex justify-around">
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             ILC Methadology to  {" "}
-            <a href="#" className="font-semibold text-indigo-600">
+            <a href="#" className="font-semibold text-[#007dbd]">
               <span className="absolute inset-0" aria-hidden="true" />
               Help Clients    <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
           <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             ILC Value  {" "}
-            <a href="#" className="font-semibold text-indigo-600">
+            <a href="#" className="font-semibold text-[#007dbd]">
               <span className="absolute inset-0" aria-hidden="true" />
              Excellent<span aria-hidden="true">&rarr;</span>
             </a>
@@ -162,7 +162,7 @@ export default function Example() {
                 <dt className="text-xl leading-5 text-gray-600 justify-center flex">
                   {stat.name}
                 </dt>
-                <dd className="self-center order-first text-7xl font-semibold tracking-tight text-indigo-600 ">
+                <dd className="self-center order-first text-7xl font-semibold tracking-tight text-[#007dbd] ">
                   {stat.value}
                 </dd>
               </div>

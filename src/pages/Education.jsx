@@ -36,7 +36,7 @@ const Blog = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto mb-[60px] max-w-[1020px] text-center lg:mb-20">
-                <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px]">
+                <h2 className="mb-4 text-3xl font-bold text-dark  sm:text-4xl md:text-[40px]">
                   Education and Training
                 </h2>
                 <p className="text-base text-gray-500">
@@ -119,7 +119,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, add }) => {
           </div>
           <div className="animated">
             <h3>
-              <div className="mb-4 inline-block text-xl font-bold text-dark hover:text-primary dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+              <div className="mb-4 inline-block text-xl font-bold text-dark hover:text-primary  sm:text-2xl lg:text-xl xl:text-2xl">
                 {CardTitle}
               </div>
             </h3>

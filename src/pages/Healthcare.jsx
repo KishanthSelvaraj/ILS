@@ -41,7 +41,7 @@ const Card = ({ imageUrl, title, description, isImageRight }) => {
       </div>
       <div className="animated lg:w-1/2 p-4 flex justify-center items-center">
         <div>
-          <h2 className="text-indigo-600 font-bold mb-3 text-center text-4xl">{title}</h2>
+          <h2 className="text-[#007dbd] font-bold mb-3 text-center text-4xl">{title}</h2>
           <p className="text-gray-700 text-center text-xl">{description}</p>
         </div>
       </div>

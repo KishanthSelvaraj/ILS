@@ -81,7 +81,7 @@ const WhyILS = () => {
 </div>
 <div className="bg-[#1E2634]" id="carouselItem1">
   <div className="row animated text-center lg:p-20 sm:py-10 py-20">
-    <h3 className="text-[#88969A] font-bold text-2xl">The ILS Systems</h3>
+    <h3 className="text-[#88969A] font-bold text-2xl">The ILS System</h3>
     <p className="text-[#88969A] lg:px-56 md:px-36 mt-2 sm:px-20 px-10">
       We have developed a structured engagement process, the ILS System,
       and enhanced lean concepts to fit the unique needs of diverse
@@ -210,9 +210,9 @@ const WhyILS = () => {
           transformation.
         </p>
         <div className=" ">
-          <button className="text-center text-white bg-[#788488] p-2 rounded-lg mt-3.5 mb-5 hover:bg-[#6c7a7e] hover:shadow-lg transition duration-300">
+          {/* <button className="text-center text-white bg-[#788488] p-2 rounded-lg mt-3.5 mb-5 hover:bg-[#6c7a7e] hover:shadow-lg transition duration-300">
             Learn More <i className="fa-solid fa-arrow-right"></i>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
@@ -341,7 +341,7 @@ const WhyILS = () => {
         <div className="animated md:grid grid-cols-3 gap-4">
           <div className="m-4 p-6 bg-white  rounded-lg shadow-md">
             <div className="flex justify-between flex-col">
-              <div className="text-5xl text-indigo-600">
+              <div className="text-5xl text-[#007dbd]">
                 <FaBookReader />
               </div>
               <h1 className="text-2xl my-3 font-bold">Learning</h1>
@@ -354,7 +354,7 @@ const WhyILS = () => {
 
           <div className="m-4 p-6 bg-white  rounded-lg shadow-md">
             <div className="flex justify-between flex-col">
-              <div className="text-5xl text-indigo-600">
+              <div className="text-5xl text-[#007dbd]">
                 <SiLevelsdotfyi />
               </div>
               <h1 className="text-2xl my-3 font-bold">Improvement</h1>
@@ -367,7 +367,7 @@ const WhyILS = () => {
 
           <div className="m-4 p-6 bg-white  rounded-lg shadow-md">
             <div className="flex justify-between flex-col">
-              <div className="text-5xl text-indigo-600">
+              <div className="text-5xl text-[#007dbd]">
                 <FaAssistiveListeningSystems />
               </div>
               <h1 className="text-2xl my-3 font-bold">Listening</h1>
@@ -380,7 +380,7 @@ const WhyILS = () => {
 
           <div className="m-4 p-6 bg-white  rounded-lg shadow-md">
             <div className="flex justify-between flex-col">
-              <div className="text-5xl text-indigo-600">
+              <div className="text-5xl text-[#007dbd]">
                 <MdWifiProtectedSetup />
               </div>
               <h1 className="text-2xl my-3 font-bold"> Self-sufficiency</h1>
@@ -393,7 +393,7 @@ const WhyILS = () => {
 
           <div className="m-4 p-6 bg-white  rounded-lg shadow-md">
             <div className="flex justify-between flex-col">
-              <div className="text-5xl text-indigo-600">
+              <div className="text-5xl text-[#007dbd]">
                 <IoThumbsUpOutline />
               </div>
               <h1 className="text-2xl my-3 font-bold">Simplicity</h1>
@@ -406,7 +406,7 @@ const WhyILS = () => {
 
           <div className="m-4 p-6 bg-white  rounded-lg shadow-md">
             <div className="flex justify-between flex-col">
-              <div className="text-5xl text-indigo-600">
+              <div className="text-5xl text-[#007dbd]">
                 <FaHandshakeSimple />
               </div>
               <h1 className="text-2xl my-3 font-bold">Partnership</h1>

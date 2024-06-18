@@ -81,7 +81,7 @@ const ProductDevelopement = () => {
         <div class="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div class="animated  bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer">
             <div className="flex text-2xl items-center gap-3 mb-3">
-              <div className="bg-indigo-600 text-white rounded-full p-2">
+              <div className="bg-[#007dbd] text-white rounded-full p-2">
                 <IoIosTimer />
               </div>
 
@@ -96,7 +96,7 @@ const ProductDevelopement = () => {
           </div>
           <div class="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer">
             <div className="flex text-2xl items-center gap-3 mb-3">
-              <div className="bg-indigo-600 text-white rounded-full p-2">
+              <div className="bg-[#007dbd] text-white rounded-full p-2">
                 <BsGraphUpArrow />
               </div>
               <h2 class="text-xl font-semibold  ">
@@ -111,7 +111,7 @@ const ProductDevelopement = () => {
           </div>
           <div class="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer">
             <div className="flex text-2xl items-center gap-3 mb-3">
-              <div className="bg-indigo-600 text-white rounded-full p-2">
+              <div className="bg-[#007dbd] text-white rounded-full p-2">
                 <MdOutlineIntegrationInstructions />
               </div>
               <h2 class="text-xl font-semibold  ">
@@ -126,7 +126,7 @@ const ProductDevelopement = () => {
           </div>
           <div class="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer">
             <div className="flex text-2xl items-center gap-3 mb-3">
-              <div className="bg-indigo-600 text-white rounded-full p-2">
+              <div className="bg-[#007dbd] text-white rounded-full p-2">
                 <GrWorkshop />
               </div>
               <h2 class="text-xl font-semibold  ">Reducing rework</h2>
@@ -138,7 +138,7 @@ const ProductDevelopement = () => {
           </div>
           <div class="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer">
             <div className="flex text-2xl items-center gap-3 mb-3">
-              <div className="bg-indigo-600 text-white rounded-full p-2">
+              <div className="bg-[#007dbd] text-white rounded-full p-2">
                 <MdOutlineManageSearch />
               </div>
               <h2 class="text-xl font-semibold  ">
@@ -152,7 +152,7 @@ const ProductDevelopement = () => {
           </div>
           <div class="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer">
             <div className="flex text-2xl items-center gap-3 mb-3">
-              <div className="bg-indigo-600 text-white rounded-full p-2">
+              <div className="bg-[#007dbd] text-white rounded-full p-2">
                 <FaArrowUpShortWide />
               </div>
               <h2 class="text-xl font-semibold  ">Improving efficiency</h2>
@@ -165,7 +165,7 @@ const ProductDevelopement = () => {
           </div>
           <div class="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer">
             <div className="flex text-2xl items-center gap-3 mb-3">
-              <div className="bg-indigo-600 text-white rounded-full p-2">
+              <div className="bg-[#007dbd] text-white rounded-full p-2">
                 <TbBulb />
               </div>
               <h2 class="text-xl font-semibold  ">
@@ -179,7 +179,7 @@ const ProductDevelopement = () => {
           </div>
           <div class="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer">
             <div className="flex text-2xl items-center gap-3 mb-3">
-              <div className="bg-indigo-600 text-white rounded-full p-2">
+              <div className="bg-[#007dbd] text-white rounded-full p-2">
                 <GiSkills />
               </div>
               <h2 class="text-xl font-semibold  ">
@@ -249,57 +249,57 @@ const ProductDevelopement = () => {
       </div> */}
 
       {/* timeline */}
-      <ol className="relative border-s border-gray-200 dark:border-gray-700 ml-5   py-5">
+      <ol className="relative border-s border-gray-200  ml-5   py-5">
         <li className="animated   mb-10 ms-4 ">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white "></div>
+          <time className="mb-1 text-sm  font-normal leading-none text-[#007dbd] ">
             What we do
           </time>
           <h3 className=" mb-4 text-xl font-bold text-gray-900">
             Streamline your product development!
           </h3>
-          <p className="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">
+          <p className="mb-2 text-base font-normal text-gray-500  ">
             Enhance team structure: Manage projects effectively, prioritize
             development opportunities, integrate innovation, and optimize
             engineering workflows for success.
           </p>
-          <p className="mb-3 text-base font-normal text-gray-500 dark:text-gray-400">
+          <p className="mb-3 text-base font-normal text-gray-500  ">
             Implement daily management systems: Document and train product
             development processes, ensuring efficiency and success at every
             stage.
           </p>
         </li>
         <li className="animated  mb-10 ms-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white "></div>
+          <time className="mb-1  text-sm font-normal leading-none text-[#007dbd] ">
             Our Approach
           </time>
           <h3 className="mb-4 text-xl font-bold text-gray-900 ">
             We improve your product development
           </h3>
-          <p className="text-base font-normal text-gray-500 dark:text-gray-400 mb-2">
+          <p className="text-base font-normal text-gray-500  mb-2">
             All of the pages and components are first designed in Figma and we
             keep a parity between the two versions even as we update the
             project.
           </p>
-          <p className="text-base font-normal text-gray-500 dark:text-gray-400 mb-3">
+          <p className="text-base font-normal text-gray-500 mb-3">
             Seamless Innovation Integration: Our expertise drives progress
             through innovative integration, fostering learning and providing
             real-time progress visibility.
           </p>
         </li>
         <li className="animated  ms-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white "></div>
+          <time className="mb-1 text-sm font-normal leading-none text-[#007dbd] ">
             Our Work
           </time>
           <h3 className="mb-4 text-xl font-bold text-gray-900 ">
           Optimizing Product Development Efficiency          </h3>
-          <p className="text-base font-normal text-gray-500 dark:text-gray-400 mb-2">
+          <p className="text-base font-normal text-gray-500 mb-2">
             Early identification of major technical risks ensures proactive
             mitigation, minimizing delays and financial overruns.
           </p>
-          <p className="text-base font-normal text-gray-500 dark:text-gray-400 mb-3">
+          <p className="text-base font-normal text-gray-500 mb-3">
             Efficient resource allocation reduces engineering hours and material
             costs, accelerating the development of advanced product
             technologies.

@@ -75,19 +75,19 @@ const LeanSystem = () => {
       <div className="animated container-fluid lg:px-10 xl:px-10 p-8 bg-[#111928]">
         <Card
           imageUrl={ls1}
-          title="Designing the Lean System"
+          title="Designing the lean system"
           description="This workshop teaches Lean principles for designing efficient workflows value stream mapping and implementing pull systems to optimize production.          "
           isImageRight={false}
         />
         <Card
           imageUrl={ls2}
-          title="The Lean Work System"
+          title="The lean work system"
           description="This workshop teaches practical Lean tools through simulations: 5S organization, design, visual aids, standardized processes, faster setups, and quality control. It also covers pull systems for production management."
           isImageRight={true}
         />
         <Card
           imageUrl={ls3}
-          title=" Managing the Lean System"
+          title=" Managing the lean system"
           description="This workshop emphasizes empowering employees through team building and problem-solving techniques (C4, Six Sigma, TRIZ). It also covers creating a Daily Management System to foster continuous learning and improvement.           "
           isImageRight={false}
         />
@@ -295,7 +295,7 @@ const LeanSystem = () => {
                       <IoIosTimer />
                     </div>
 
-                    <h2 className="text-lg font-semibold">Public Delivery</h2>
+                    <h2 className="text-lg font-semibold">Public delivery</h2>
                   </div>
                   <p className="text-gray-700">
                     Our Kentucky public workshops offer lean training for your
@@ -310,7 +310,7 @@ const LeanSystem = () => {
                       <GrWorkshop />
                     </div>
                     <h2 className="text-xl font-semibold  ">
-                      Conventional On-site Delivery
+                      Conventional on-site delivery
                     </h2>
                   </div>
                   <p className="text-gray-700">
@@ -328,7 +328,7 @@ const LeanSystem = () => {
                       <TbBulb />
                     </div>
                     <h2 className="text-xl font-semibold  ">
-                      Lean Systems Certification Boot Camp
+                      Lean systems certification boot camp
                     </h2>
                   </div>
                   <p className="text-gray-700">
@@ -371,7 +371,7 @@ const LeanSystem = () => {
       <div className="animated bg-white px-8 pb-8">
         <div className="mx-auto max-w-3xl lg:text-center">
           <p className="my-5 text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl text-center">
-            Lean Systems Certification Boot Camp Week – Systems
+            Lean systems certification boot camp week – systems
           </p>
         </div>
         <div className="md:grid grid-cols-2 gap-8 items-center">
@@ -385,13 +385,13 @@ const LeanSystem = () => {
 
           <div className="vission-mission flex flex-col gap-5">
             <div className="animated ">
-              <h1 className="lg:text-2xl md:text-2xl text-xl font-bold text-indigo-600">
+              <h1 className="lg:text-2xl md:text-2xl text-xl font-bold text-[#007dbd]">
                 Week 1
               </h1>
               <p>Assess your facility and map key value streams.</p>
             </div>
             <div className="animated ">
-              <h1 className="lg:text-2xl md:text-2xl text-xl font-bold text-indigo-600">
+              <h1 className="lg:text-2xl md:text-2xl text-xl font-bold text-[#007dbd]">
                 Week 2
               </h1>
               <p>
@@ -401,7 +401,7 @@ const LeanSystem = () => {
               </p>
             </div>
             <div className="animated ">
-              <h1 className="lg:text-2xl md:text-2xl text-xl font-bold text-indigo-600">
+              <h1 className="lg:text-2xl md:text-2xl text-xl font-bold text-[#007dbd]">
                 Week 3
               </h1>
               <p>

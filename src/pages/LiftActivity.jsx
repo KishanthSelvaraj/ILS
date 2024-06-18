@@ -116,7 +116,7 @@ const Lift = () => {
                   key={index}
                   className="animated p-4 bg-white rounded-md shadow text-center flex flex-col items-center"
                 >
-                  <div className="text-4xl mb-4 text-blue-500">{card.icon}</div>
+                  <div className="text-4xl mb-4 text-[#007dbd]">{card.icon}</div>
                   <h2 className="text-lg font-bold mb-2">{card.title}</h2>
                   <p className="text-sm text-gray-600 text-left">
                     {card.description}
