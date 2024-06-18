@@ -48,7 +48,7 @@ const Books = () => {
         </div>
         <div className="animated w-full lg:w-1/2 px-4">
           <h2 className="text-2xl lg:text-3xl font-bold mb-4">
-            Creating and Sustaining Highly Effective Lean Standardized Work Systems
+            Creating and sustaining highly effective lean standardized work systems
           </h2>
           <p className="text-lg mb-4">
             – Parthi Damodaraswamy, Jon C. Yingling
@@ -88,7 +88,7 @@ const Books = () => {
         </div>
         <div className="animated w-full lg:w-1/2 px-4 order-1 lg:order-2">
           <h2 className="text-2xl lg:text-3xl font-bold mb-4">
-            The C4 Process: Four Vital Steps to Better Work
+            The C4 process: Four vital steps to better work
           </h2>
           <p className="text-lg mb-4">– David Veech, Parthi Damodaraswamy</p>
           <p className="text-lg mb-4">
