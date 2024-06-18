@@ -213,7 +213,7 @@ const ExecutiveEducation = () => {
                     <div className="md:grid grid-cols-3 gap-2">
                       <div className="animated animated animated m-4 p-6 bg-white  rounded-lg shadow-md border">
                         <div className="flex justify-between flex-col">
-                          <div className="text-5xl text-indigo-600  flex justify-center">
+                          <div className="text-5xl text-[#007dbd]  flex justify-center">
                             <BsBook />
                           </div>
                           <h1 className="text-xl my-3 font-bold mt-4 xl:text-2xl text-center ">
@@ -227,7 +227,7 @@ const ExecutiveEducation = () => {
                       </div>
                       <div className="animated animated m-4 p-6 bg-white  rounded-lg shadow-md border">
                         <div className="flex justify-between flex-col">
-                          <div className="text-5xl text-indigo-600 flex justify-center">
+                          <div className="text-5xl text-[#007dbd] flex justify-center">
                             <MdOutlineSupport />
                           </div>
                           <h1 className="text-xl my-3 font-bold mt-4 xl:text-2xl text-center">
@@ -241,7 +241,7 @@ const ExecutiveEducation = () => {
                       </div>
                       <div className="animated m-4 p-6 bg-white  rounded-lg shadow-md border">
                         <div className="flex justify-between flex-col ">
-                          <div className="text-5xl text-indigo-600  flex justify-center">
+                          <div className="text-5xl text-[#007dbd]  flex justify-center">
                             <BsFillCalendarCheckFill />
                           </div>
                           <h1 className="text-xl my-3 font-bold mt-4 xl:text-2xl text-center">
@@ -263,7 +263,7 @@ const ExecutiveEducation = () => {
                   aria-labelledby="nav-profile-tab"
                 >
                   <div className="mt-5">
-                    <h3 className=" text-indigo-600 font-bold text-2xl">
+                    <h3 className=" text-[#007dbd] font-bold text-2xl">
                       Workshop Schedule
                     </h3>
                     <p>
