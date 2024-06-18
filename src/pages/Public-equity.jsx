@@ -9,7 +9,7 @@ import { FaAssistiveListeningSystems, FaBookReader } from "react-icons/fa";
 import { SiLevelsdotfyi } from "react-icons/si";
 import Manufacturing_4 from "/manufacturing-4.jpeg";
 import Manufacturing_9 from "/manufacturing-9.webp";
-import Manufacturing_8 from "/manufacturing-8.webp";
+import Manufacturing_8 from "/manufacturing-1.webp";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
