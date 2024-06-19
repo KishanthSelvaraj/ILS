@@ -20,6 +20,15 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+const timelineItems = [
+  { id: '1', title: 'Investment Criteria and Strategy' },
+  { id: '2', title: 'Due Diligence Process Overview' },
+  { id: '3', title: 'Value Creation Plan(VCP) and Execution' },
+  { id: '4', title: 'Financial Planning and Analysis' },
+  { id: '5', title: 'Decision Making for the Purchases' },
+  { id: '6', title: 'Implementation of Value Creation' },
+  { id: '7', title: 'Exiting Investment Strategy' },  
+];
 gsap.registerPlugin(ScrollTrigger);
 
 const PublicEquity = () => {
@@ -96,6 +105,73 @@ const PublicEquity = () => {
         </div>
       </div>
 
+    
+   
+{/*      
+      Unlocking business potential: Beyond EBITDA metrics */}
+  
+
+      <div className="bg-[#DCE0E5] ">
+        <div className="container-fluid py-md-5 py-3 mt-md-5">
+          <div>
+            <h3 className="animated text-center text-black font-bold text-3xl">
+        Unlocking business potential: Beyond EBITDA metrics{" "}
+            
+            </h3>
+            {/* <p className="animated text-center text-[#88969A] md:px-40 py-3">
+              We apply ILS System™ using a special version that has been
+              specially designed to meet the needs of our private equity
+              clients. This methodical approach is designed to:
+            </p> */}
+          </div>
+          <div>
+            <div className=" mx-auto py-8 mb-5 w-full px-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer  hover:border-gray-900">
+                 
+                  <p className="text-gray-700">
+                  We strengthen the operations management process and team, enabling
+            them to consistently meet demanding performance goals and to solve
+            problems quickly and systematically.
+                  </p>
+                </div>
+                <div className="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer hover:border-gray-900">
+                  
+                  <p className="text-gray-700">
+                  We resolve, once and for all, the nagging, persistent operational
+                  problems that have been holding operations back
+                  </p>
+                </div>
+                <div className="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer">
+                
+                  <p className="text-gray-700">
+                  We build internal skills and capability to sustain lean operations and to continue with an aggressive continuous improvement program throughout the ownership cycle
+                  </p>
+                </div>
+                <div className="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer  hover:border-gray-900">
+                  
+                  <p className="text-gray-700">
+                  Our scope of improvement is by no means limited to direct production or service operations. We address office processes, accounting, sales, procurement, IT, inventory management, engineering and product development, maintenance, logistics, supply chain, etc.
+                  </p>
+                </div>
+                <div className="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer hover:border-gray-900">
+                 
+                  <p className="text-gray-700">
+                  He goal is total enterprise transformation and it is critical to address the most critical and/or wasteful direct and supporting value streams.
+                  </p>
+                </div>
+                <div className="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer">
+                 
+                  <p className="text-gray-700">
+                  Our goal is to continue in long term partnership with the acquired company after their sale is complete as a trusted advisor where we continue to learn together and make improvements that create higher levels of operational performance and value delivery.                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Driving operational excellence and value creation */}
       <div className="container-md container-fluid">
         <div className="row">
           <div className="animated  col-12 col-lg-6 col-xl-6 col-xxl-6 py-sm-5 py-3 flex items-center">
@@ -145,110 +221,6 @@ const PublicEquity = () => {
           </div>
         </div>
       </div>
-      {/* vertical timeline start */}
-      <h3 className="animated text-center font-bold text-3xl">
-        Unlocking business potential: Beyond EBITDA metrics{" "}
-      </h3>
-      <VerticalTimeline>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          // date="2011 - present"
-          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
-          <p>
-            We strengthen the operations management process and team, enabling
-            them to consistently meet demanding performance goals and to solve
-            problems quickly and systematically.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          // date="2011 - present"
-          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
-          <p>
-            We resolve, once and for all, the nagging, persistent operational
-            problems that have been holding operations back
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          // date="2011 - present"
-          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
-          <p>
-            We build internal skills and capability to sustain lean operations
-            and to continue with an aggressive continuous improvement program
-            throughout the ownership cycle{" "}
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          // date="2011 - present"
-          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
-          <p>
-            Our scope of improvement is by no means limited to direct production
-            or service operations. We address office processes, accounting,
-            sales, procurement, IT, inventory management, engineering and
-            product development, maintenance, logistics, supply chain, etc.{" "}
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          // date="2011 - present"
-          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
-          <p>
-            he goal is total enterprise transformation and it is critical to
-            address the most critical and/or wasteful direct and supporting
-            value streams.{" "}
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          // date="2011 - present"
-          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
-          <p>
-            Our goal is to continue in long term partnership with the acquired
-            company after their sale is complete as a trusted advisor where we
-            continue to learn together and make improvements that create higher
-            levels of operational performance and value delivery.{" "}
-          </p>
-        </VerticalTimelineElement>
-      </VerticalTimeline>
-      {/* vertical timeline end */}
 
       {/* Third Layout Start */}
       {/* <div className="container-md container-fluid py-md-5 py-3 md:px-20 px-5">
@@ -302,7 +274,7 @@ const PublicEquity = () => {
 
       {/* Fourth layout Start */}
       <div className="bg-[#1E2634]">
-        <div className="container-fluid py-md-5 py-3 mt-md-5">
+        <div className="container-fluid py-md-5 py-3 ">
           <div>
             <h3 className="animated text-center text-[#9b7722] font-bold text-3xl">
               Our Approach
@@ -476,12 +448,34 @@ const PublicEquity = () => {
 
 
       <div className="">
-      <h3 className=" text-center text-black font-bold mt-lg-4 mt-2 text-xl  md:text-xl lg:text-xl xl:text-3xl xxl:text-3xl">
+      <h3 className=" text-center text-black font-bold my-lg-4 my-2 text-xl  md:text-xl lg:text-xl xl:text-3xl xxl:text-3xl">
       ILS 7-step deal flow process:
 </h3>
-<div className="container flex items-center justify-center">
+{/* <div className="container flex items-center justify-center">
 <img src={flowChart} alt="" className="lg:w-10/12 " />
-</div>
+</div> */}
+<div className=" bg-white flex items-center justify-center md:p-10 lg:p-10 ">
+      <div className="w-full p-4  ">
+        <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-7  sm:gap-x-4 gap-y-7">
+          {timelineItems.map((item,index) => (
+            <li key={item.id} className="relative mb-6 sm:mb-0">
+              <div className="flex items-center justify-center">
+                <div className={`z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0" ${item.id === '7' ? 'md:-ml-[290px] lg:-ml-[270px] xl:-ml-40' : ''}`}>
+                  <span className="text-blue-800 dark:text-blue-300">{item.id}</span>
+                </div>
+                {index !== timelineItems.length - 1 && (
+              <div className="hidden sm:flex w-full bg-gray-200 h-0.5 ml-3 dark:bg-gray-700"></div>
+            )}
+              </div>
+              
+              <div className="mt-7 sm:pe-8   text-center">
+                <h3 className ={`text-lg font-semibold text-gray-900 dark:text-white border-b-2 border-blue-100 px-4 py-6 shadow-md rounded-md`}>{item.title}</h3>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
       </div>
 
       <div className="bg-white">

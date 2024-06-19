@@ -19,6 +19,14 @@ const ProductDevelopement = () => {
   const [dropdown1, setDropdown1] = React.useState(false);
   const [dropdown2, setDropdown2] = React.useState(false);
   const [dropdown3, setDropdown3] = React.useState(false);
+  const [dropdown4, setDropdown4] = React.useState(false);
+  const [dropdown5, setDropdown5] = React.useState(false);
+  const [dropdown6, setDropdown6] = React.useState(false);
+  const [dropdown7, setDropdown7] = React.useState(false);
+  const [dropdown8, setDropdown8] = React.useState(false);
+  const [dropdown9, setDropdown9] = React.useState(false);
+  const [dropdown10, setDropdown10] =React.useState(false);
+  const [dropdown11, setDropdown11] = React.useState(false);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -248,67 +256,9 @@ const ProductDevelopement = () => {
         </div>
       </div> */}
 
-      {/* timeline */}
-      <ol className="relative border-s border-gray-200  ml-5   py-5">
-        <li className="animated   mb-10 ms-4 ">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white "></div>
-          <time className="mb-1 text-sm  font-normal leading-none text-[#007dbd] ">
-            What we do
-          </time>
-          <h3 className=" mb-4 text-xl font-bold text-gray-900">
-            Streamline your product development!
-          </h3>
-          <p className="mb-2 text-base font-normal text-gray-500  ">
-            Enhance team structure: Manage projects effectively, prioritize
-            development opportunities, integrate innovation, and optimize
-            engineering workflows for success.
-          </p>
-          <p className="mb-3 text-base font-normal text-gray-500  ">
-            Implement daily management systems: Document and train product
-            development processes, ensuring efficiency and success at every
-            stage.
-          </p>
-        </li>
-        <li className="animated  mb-10 ms-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white "></div>
-          <time className="mb-1  text-sm font-normal leading-none text-[#007dbd] ">
-            Our Approach
-          </time>
-          <h3 className="mb-4 text-xl font-bold text-gray-900 ">
-            We improve your product development
-          </h3>
-          <p className="text-base font-normal text-gray-500  mb-2">
-            All of the pages and components are first designed in Figma and we
-            keep a parity between the two versions even as we update the
-            project.
-          </p>
-          <p className="text-base font-normal text-gray-500 mb-3">
-            Seamless Innovation Integration: Our expertise drives progress
-            through innovative integration, fostering learning and providing
-            real-time progress visibility.
-          </p>
-        </li>
-        <li className="animated  ms-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white "></div>
-          <time className="mb-1 text-sm font-normal leading-none text-[#007dbd] ">
-            Our Work
-          </time>
-          <h3 className="mb-4 text-xl font-bold text-gray-900 ">
-          Optimizing Product Development Efficiency          </h3>
-          <p className="text-base font-normal text-gray-500 mb-2">
-            Early identification of major technical risks ensures proactive
-            mitigation, minimizing delays and financial overruns.
-          </p>
-          <p className="text-base font-normal text-gray-500 mb-3">
-            Efficient resource allocation reduces engineering hours and material
-            costs, accelerating the development of advanced product
-            technologies.
-          </p>
-        </li>
-      </ol>
-      {/* timeline end */}
     
-      <div className="animated  container mx-auto px-8 py-12">
+{/*     
+      <div className="  container mx-auto px-8 py-12">
         <h2 className="text-3xl font-bold text-center mb-8">ILS Methodology</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="p-6 bg-white shadow-lg rounded-lg">
@@ -383,9 +333,448 @@ const ProductDevelopement = () => {
             </ul>
           </div>
         </div>
+      </div> */}
+      <div className="animated container mx-auto px-8 py-12">
+        <h2 className="text-3xl font-bold text-center mb-8">
+        ILS Methodology
+        </h2>
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 lg:gap-24 md:gap-10 sm:gap">
+        <div className="w-full  mx-auto">
+          <div className=" mb-8">
+            <button
+              onClick={() => setDropdown1(!dropdown1)}
+              className="flex justify-between items-center w-full bg-white shadow-md rounded-md p-4"
+            >
+              <span>
+              Build a Leadership Team
+              </span>
+              <span className="text-gray-600">{dropdown1 ? "-" : "+"}</span>
+            </button>
+            {dropdown1 && (
+              <div class=" p-2 bg-white rounded-lg md:p-4 dark:bg-gray-800">
+                <ul
+                  role="list"
+                  class="space-y-4 text-gray-500 dark:text-gray-400"
+                >
+                  <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                    </svg>
+                    <span class="leading-tight">
+                    Get key players on board.
+                    </span>
+                  </li>
+             
+                </ul>
+              </div>
+            )}
+          </div>
+          <div className=" mb-8">
+            <button
+              onClick={() => setDropdown2(!dropdown2)}
+              className="flex justify-between items-center w-full bg-white shadow-md rounded-md p-4"
+            >
+              <span>Train on Lean Principles</span>
+              <span className="text-gray-600">{dropdown2 ? "-" : "+"}</span>
+            </button>
+            {dropdown2 && (
+              <div class=" p-2 bg-white rounded-lg md:p-4 dark:bg-gray-800">
+                <ul
+                  role="list"
+                  class="space-y-4 text-gray-500 dark:text-gray-400"
+                >
+                  <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                    </svg>
+                    <span class="leading-tight">
+                    Ensure everyone understands the approach.
+                    </span>
+                  </li>
+                  
+                </ul>
+              </div>
+            )}
+          </div>
+          <div className=" mb-8">
+            <button
+              onClick={() => setDropdown3(!dropdown3)}
+              className="flex justify-between items-center w-full bg-white shadow-md rounded-md p-4"
+            >
+              <span>CAnalyze Your Current State</span>
+              <span className="text-gray-600">{dropdown3 ? "-" : "+"}</span>
+            </button>
+            {dropdown3 && (
+              <div class=" p-2 bg-white rounded-lg md:p-4 dark:bg-gray-800">
+                <ul
+                  role="list"
+                  class="space-y-4 text-gray-500 dark:text-gray-400"
+                >
+                  <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                    </svg>
+                    <span class="leading-tight">
+                    Identify strengths and weaknesses.
+                    </span>
+                  </li>
+                
+                </ul>
+              </div>
+            )}
+          </div>
+          <div className=" mb-8">
+            <button
+              onClick={() => setDropdown7(!dropdown7)}
+              className="flex justify-between items-center w-full bg-white shadow-md rounded-md p-4"
+            >
+              <span>
+              Brainstorm Solutions
+              </span>
+              <span className="text-gray-600">{dropdown7 ? "-" : "+"}</span>
+            </button>
+            {dropdown7 && (
+              <div class=" p-2 bg-white rounded-lg md:p-4 dark:bg-gray-800">
+                <ul
+                  role="list"
+                  class="space-y-4 text-gray-500 dark:text-gray-400"
+                >
+                  <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                    </svg>
+                    <span class="leading-tight">
+                    Address challenging issues collaboratively.
+                    </span>
+                  </li>
+             
+                </ul>
+              </div>
+            )}
+          </div>
+          <div className=" mb-8">
+            <button
+              onClick={() => setDropdown8(!dropdown8)}
+              className="flex justify-between items-center w-full bg-white shadow-md rounded-md p-4"
+            >
+              <span>Develop Concepts</span>
+              <span className="text-gray-600">{dropdown8 ? "-" : "+"}</span>
+            </button>
+            {dropdown8 && (
+              <div class=" p-2 bg-white rounded-lg md:p-4 dark:bg-gray-800">
+                <ul
+                  role="list"
+                  class="space-y-4 text-gray-500 dark:text-gray-400"
+                >
+                  <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                    </svg>
+                    <span class="leading-tight">
+                    Craft initial ideas for improvement.
+                    </span>
+                  </li>
+                  
+                </ul>
+              </div>
+            )}
+          </div>
+          <div className=" mb-8">
+            <button
+              onClick={() => setDropdown9(!dropdown9)}
+              className="flex justify-between items-center w-full bg-white shadow-md rounded-md p-4"
+            >
+              <span>Plan the Future State</span>
+              <span className="text-gray-600">{dropdown9 ? "-" : "+"}</span>
+            </button>
+            {dropdown9 && (
+              <div class=" p-2 bg-white rounded-lg md:p-4 dark:bg-gray-800">
+                <ul
+                  role="list"
+                  class="space-y-4 text-gray-500 dark:text-gray-400"
+                >
+                  <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                    </svg>
+                    <span class="leading-tight">
+                    Design the optimized process.
+                    </span>
+                  </li>
+                
+                </ul>
+              </div>
+            )}
+          </div>
+        </div>
+        <div className="w-full  mx-auto">
+          <div className=" mb-8">
+            <button
+              onClick={() => setDropdown4(!dropdown4)}
+              className="flex justify-between items-center w-full bg-white shadow-md rounded-md p-4"
+            >
+              <span>
+              Bootcamp Training
+              </span>
+              <span className="text-gray-600">{dropdown4 ? "-" : "+"}</span>
+            </button>
+            {dropdown4 && (
+              <div class=" p-2 bg-white rounded-lg md:p-4 ">
+                <ul
+                  role="list"
+                  class="space-y-4 text-gray-500 "
+                >
+                  <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 "
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                    </svg>
+                    <span class="leading-tight">
+                    Develop methods and launch the new process.
+                    </span>
+                  </li>
+             
+                </ul>
+              </div>
+            )}
+          </div>
+          <div className=" mb-8">
+            <button
+              onClick={() => setDropdown5(!dropdown5)}
+              className="flex justify-between items-center w-full bg-white shadow-md rounded-md p-4"
+            >
+              <span>Team Training & Launch</span>
+              <span className="text-gray-600">{dropdown5 ? "-" : "+"}</span>
+            </button>
+            {dropdown5 && (
+              <div class=" p-2 bg-white rounded-lg md:p-4 dark:bg-gray-800">
+                <ul
+                  role="list"
+                  class="space-y-4 text-gray-500 dark:text-gray-400"
+                >
+                  <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                    </svg>
+                    <span class="leading-tight">
+                    Train teams and implement the new process.
+                    </span>
+                  </li>
+                 
+                </ul>
+              </div>
+            )}
+          </div>
+          <div className=" mb-8">
+            <button
+              onClick={() => setDropdown6(!dropdown6)}
+              className="flex justify-between items-center w-full bg-white shadow-md rounded-md p-4"
+            >
+              <span>Daily Management System</span>
+              <span className="text-gray-600">{dropdown6 ? "-" : "+"}</span>
+            </button>
+            {dropdown6 && (
+              <div class=" p-2 bg-white rounded-lg md:p-4 dark:bg-gray-800">
+                <ul
+                  role="list"
+                  class="space-y-4 text-gray-500 dark:text-gray-400"
+                >
+                  <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                    </svg>
+                    <span class="leading-tight">
+                    Establish routines for monitoring and improvement.
+                    </span>
+                  </li>
+                
+                </ul>
+              </div>
+            )}
+          </div>
+          <div className=" mb-8">
+            <button
+              onClick={() => setDropdown10(!dropdown10)}
+              className="flex justify-between items-center w-full bg-white shadow-md rounded-md p-4"
+            >
+              <span>
+              Coach Executives
+              </span>
+              <span className="text-gray-600">{dropdown10 ? "-" : "+"}</span>
+            </button>
+            {dropdown10 && (
+              <div class=" p-2 bg-white rounded-lg md:p-4 ">
+                <ul
+                  role="list"
+                  class="space-y-4 text-gray-500 "
+                >
+                  <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 "
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                    </svg>
+                    <span class="leading-tight">
+                    Guide leaders for effective change management.
+                    </span>
+                  </li>
+             
+                </ul>
+              </div>
+            )}
+          </div>
+          <div className=" mb-8">
+            <button
+              onClick={() => setDropdown11(!dropdown11)}
+              className="flex justify-between items-center w-full bg-white shadow-md rounded-md p-4"
+            >
+              <span>Follow-up & Troubleshooting</span>
+              <span className="text-gray-600">{dropdown11 ? "-" : "+"}</span>
+            </button>
+            {dropdown11 && (
+              <div class=" p-2 bg-white rounded-lg md:p-4 dark:bg-gray-800">
+                <ul
+                  role="list"
+                  class="space-y-4 text-gray-500 dark:text-gray-400"
+                >
+                  <li class="flex space-x-2 rtl:space-x-reverse items-center">
+                    <svg
+                      class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                    </svg>
+                    <span class="leading-tight">
+                    Address challenges and ensure success.
+                    </span>
+                  </li>
+                 
+                </ul>
+              </div>
+            )}
+          </div>
+        </div>
+        </div>
       </div>
-
-    
+      {/* timeline */}
+      <ol className="relative border-s border-gray-200  ml-5   py-5">
+        <li className="animated   mb-10 ms-4 ">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white "></div>
+          <time className="mb-1 text-sm  font-normal leading-none text-[#007dbd] ">
+            What we do
+          </time>
+          <h3 className=" mb-4 text-xl font-bold text-gray-900">
+            Streamline your product development!
+          </h3>
+          <p className="mb-2 text-base font-normal text-gray-500  ">
+            Enhance team structure: Manage projects effectively, prioritize
+            development opportunities, integrate innovation, and optimize
+            engineering workflows for success.
+          </p>
+          <p className="mb-3 text-base font-normal text-gray-500  ">
+            Implement daily management systems: Document and train product
+            development processes, ensuring efficiency and success at every
+            stage.
+          </p>
+        </li>
+        <li className="animated  mb-10 ms-4">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white "></div>
+          <time className="mb-1  text-sm font-normal leading-none text-[#007dbd] ">
+            Our Approach
+          </time>
+          <h3 className="mb-4 text-xl font-bold text-gray-900 ">
+            We improve your product development
+          </h3>
+          <p className="text-base font-normal text-gray-500  mb-2">
+            All of the pages and components are first designed in Figma and we
+            keep a parity between the two versions even as we update the
+            project.
+          </p>
+          <p className="text-base font-normal text-gray-500 mb-3">
+            Seamless Innovation Integration: Our expertise drives progress
+            through innovative integration, fostering learning and providing
+            real-time progress visibility.
+          </p>
+        </li>
+        <li className="animated  ms-4">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-8 border border-white "></div>
+          <time className="mb-1 text-sm font-normal leading-none text-[#007dbd] ">
+            Our Work
+          </time>
+          <h3 className="mb-4 text-xl font-bold text-gray-900 ">
+          Optimizing Product Development Efficiency          </h3>
+          <p className="text-base font-normal text-gray-500 mb-2">
+            Early identification of major technical risks ensures proactive
+            mitigation, minimizing delays and financial overruns.
+          </p>
+          <p className="text-base font-normal text-gray-500 mb-3">
+            Efficient resource allocation reduces engineering hours and material
+            costs, accelerating the development of advanced product
+            technologies.
+          </p>
+        </li>
+      </ol>
+      {/* timeline end */}    
 
       <hr className="py-2" />
 

@@ -320,104 +320,55 @@ const Cost = () => {
           </div>
            {/* vertical timeline start */}
  
-      <VerticalTimeline>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          // date="2011 - present"
-          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
-          <p>
-          Gathering data from customers and suppliers is crucial for informed decision-making. Customer data provides insights into preferences, behaviors, and satisfaction levels, guiding product/service enhancements and fostering loyalty.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          // date="2011 - present"
-          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
-          <p>
-          Functional Analysts are pivotal in conducting analysis within organizations. Their expertise lies in dissecting complex systems, processes, and requirements to derive actionable insights.
-
-</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          // date="2011 - present"
-          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
-          <p>
-          In procurement, qualifying vendors and managing auction processes are critical tasks. Vendor qualification involves assessing supplier capabilities, reliability, and compliance with organizational standards.
-
-</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          // date="2011 - present"
-          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
-          <p>
-          Reporting out is a crucial aspect of project management, involving the communication of project progress, findings, and insights to stakeholders. This process ensures transparency, accountability, and alignment with project goals.
+    
+      {/* <div className="bg-white ">
+        <div className="container-fluid py-md-5 py-3 mt-md-5">
+        
+          <div>
+            <div className=" mx-auto py-8 mb-5 w-full px-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer  hover:border-gray-900">
+                 
+                  <p className="text-gray-700">
+                  Gathering data from customers and suppliers is crucial for informed decision-making. Customer data provides insights into preferences, behaviors, and satisfaction levels, guiding product/service enhancements and fostering loyalty.
+                  </p>
+                </div>
+                <div className="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer hover:border-gray-900">
+                  
+                  <p className="text-gray-700">
+                  Functional Analysts are pivotal in conducting analysis within organizations. Their expertise lies in dissecting complex systems, processes, and requirements to derive actionable insights.
+                  </p>
+                </div>
+                <div className="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer">
+                
+                  <p className="text-gray-700">
+                  In procurement, qualifying vendors and managing auction processes are critical tasks. Vendor qualification involves assessing supplier capabilities, reliability, and compliance with organizational standards.
+                  </p>
+                </div>
+                <div className="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer  hover:border-gray-900">
+                  
+                  <p className="text-gray-700">
+                  Reporting out is a crucial aspect of project management, involving the communication of project progress, findings, and insights to stakeholders. This process ensures transparency, accountability, and alignment with project goals.
+                  </p>
+                </div>
+                <div className="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer hover:border-gray-900">
+                 
+                  <p className="text-gray-700">
+                  Executing changes with either the existing vendor or a new vendor, selected by the customer, necessitates a strategic approach and seamless collaboration. With an existing vendor, leveraging established relationships and mutual understanding accelerates the implementation process.
 
 
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          // date="2011 - present"
-          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
-          <p>
-          Executing changes with either the existing vendor or a new vendor, selected by the customer, necessitates a strategic approach and seamless collaboration. With an existing vendor, leveraging established relationships and mutual understanding accelerates the implementation process.
-
-
-
-
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          // date="2011 - present"
-          iconStyle={{ background: "rgb(37, 99, 235)", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          {/* <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
-          <p>
-          Sustaining savings over a two-year term or more, as per customer request, requires implementing regular audits as a proactive measure. These audits serve to monitor and evaluate the effectiveness of cost-saving initiatives, ensuring continued efficiency and adherence to budgetary goals.
-
-
-
-
-          </p>
-        </VerticalTimelineElement>
-      </VerticalTimeline>
+                  </p>
+                </div>
+                <div className="animated bg-white p-6 rounded-lg shadow-md hover-effect-3 cursor-pointer">
+                 
+                  <p className="text-gray-700">
+                 Sustaining savings over a two-year term or more, as per customer request, requires implementing regular audits as a proactive measure. These audits serve to monitor and evaluate the effectiveness of cost-saving initiatives, ensuring continued efficiency and adherence to budgetary goals.               </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
       {/* vertical timeline end */}
         </div>
       </div>

@@ -191,8 +191,8 @@ const Manufacturing = () => {
 
       <div className=" mx-auto flex flex-wrap justify-center mt-5">
         <div className="animated text-center">
-          <div className="text-4xl font-bold">We Create for our clients</div>
-          <p className="my-7 text-lg">
+          <div className="text-4xl font-bold">We create for our clients</div>
+          <p className="lg:mx-20 md:mx-10  my-7 text-lg =">
             When creating products or services for clients, it's essential to
             keep their needs and preferences at the forefront. Here are some
             steps you can follow to ensure your offerings align with client
@@ -204,7 +204,7 @@ const Manufacturing = () => {
           <div className="animated max-w-[300px] md:max-w-[500px] rounded overflow-hidden shadow-lg m-4">
             <img className="w-full" src={Manufacturing_61} alt="Image 2" />
             <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2"> Customer Support</div>
+              <div className="font-bold text-xl mb-2">Market Research</div>
               <p className="text-gray-700 text-base">
                 Conduct thorough market research to understand your target
                 audience and their pain points. Identify the specific needs,

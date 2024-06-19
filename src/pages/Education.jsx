@@ -113,7 +113,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, add }) => {
   return (
     <>
       <div className="w-full px-4 md:w-1/2 lg:w-1/2">
-        <div className="mb-10 w-full">
+        <div className=" w-full">
           <div className="mb-8 overflow-hidden rounded">
             <img src={image} alt="" className="animated w-full" />
           </div>

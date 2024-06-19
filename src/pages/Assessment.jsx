@@ -44,8 +44,8 @@ const Assessment = () => {
     <div className="container mx-auto px-4 my-10 py-8 pt-14">
       {/* Introduction */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-4">Assessments</h1>
-        <p className="text-gray-700">
+        <h1 className="lg:text-4xl md:text-2xl text-2xl font-bold mb-4 text-center">Assessments</h1>
+        <p className="text-gray-700 text-center lg:text-lg text-md">
           ILS offers a deep dive into your operations, uncovering inefficiencies and opportunities for cost reduction. We focus on key processes, identifying better methods and empowering your workforce for peak performance. Our insightful analysis leads to practical solutions valued by our clients.
         </p>
       </div>
