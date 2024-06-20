@@ -109,6 +109,27 @@ const Cost = () => {
       );
     });
   }, []);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    // Animation for each div
+    gsap.utils.toArray(".anime").forEach((element) => {
+      gsap.fromTo(
+        element,
+        { opacity: 0, x: -100 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1,
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%",
+            end: "top 10%",
+            scrub: 1,
+          },
+        }
+      );
+    });
+  }, []);
   return (
     <div className="md:py-20 py-20">
       <div>
@@ -311,11 +332,11 @@ const Cost = () => {
         </div>
         {/* Cards Layout End */}
 
-        <div className="d">
+        <div className="anime">
           <h3 className=" text-center text-black font-bold my-lg-4 my-2 text-xl  md:text-xl lg:text-xl xl:text-3xl xxl:text-3xl">
             ILS Cost Containment Process Flow
           </h3>
-          <div className="container flex items-center justify-center">
+          <div className="animated container flex items-center justify-center">
             <img src={flow} alt="" className="lg:w-10/12" />
           </div>
            {/* vertical timeline start */}

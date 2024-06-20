@@ -28,7 +28,7 @@ const Skills = () => {
   }, []);
   return (
     <div className="pb-24 pt-14">
-      <div className="bg-[#F4F4EA]">
+      <div className="bg-white">
 {/* siva first start */}
 <div className="md:px-20">
           <div className="">
@@ -169,7 +169,7 @@ const Skills = () => {
         </div>
 {/* siva second end */}
 {/* siva third start */}
-<div className="md:px-20 bg-[#F4F4EA] ">
+<div className="md:px-20 bg-white ">
           <div className="animated ">
             <div className="animated container lg:px-20 xl:px-20 md:p-14 p-8">
               <div className="row">
@@ -221,7 +221,7 @@ const Skills = () => {
         </div>
 {/* siva third end */}
 
-        <div className="md:px-20 bg-[#F4F4EA]">
+        <div className="md:px-20 bg-white">
           {/* First COntent Start */}
           <div className="animated ">
             {/* Help your bussiness code start */}
@@ -291,7 +291,7 @@ const Skills = () => {
           </div>
         </div>
         {/* Second COntent Start */}
-        <div className="bg-[#F4F4EA] md:py-10 py-5 md:px-20">
+        <div className="bg-white md:py-10 py-5 md:px-20">
           <div className="animated ">
             {/* Help your bussiness code start */}
             <div className="animated container lg:px-20 xl:px-20 md:p-14 p-8">
@@ -592,7 +592,7 @@ const Skills = () => {
         </div>
         {/* Third Content End */}
         {/* Forth COntent Start */}
-        <div className="md:px-20 bg-[#F4F4EA]">
+        <div className="md:px-20 bg-white">
           <div className="">
             {/* Help your bussiness code start */}
             <div className="container lg:px-20 xl:px-20 md:p-14 p-8">
@@ -650,7 +650,7 @@ const Skills = () => {
           </div>
        
         {/* Courosel Content Start */}
-        <div className="flex justify-center md:pt-0 py-4 bg-[#F4F4EA]">
+        <div className="flex justify-center md:pt-0 py-4 bg-white">
           <div className="w-full  md:w-[600px]">
             <div
               id="cr1"
@@ -728,7 +728,7 @@ const Skills = () => {
         
         {/* Forth COntent End */}
         {/* Fifth content start */}
-        <div className="bg-[#F4F4EA] md:py-10 py-5 md:px-20">
+        <div className="bg-white md:py-10 py-5 md:px-20">
         <div className="animated ">
           {/* Help your bussiness code start */}
           <div className="container lg:px-20 xl:px-20 md:p-14 p-8">
@@ -781,7 +781,7 @@ const Skills = () => {
         {/* Fifth content end */}
           {/* SIxth content start */}
           <div>
-            <div className="bg-[#F4F4EA]">
+            <div className="bg-white">
               {/* Help your bussiness code start */}
               <div className="container lg:px-20 xl:px-20 md:p-14 p-8">
                 <div className="row">
@@ -840,7 +840,7 @@ const Skills = () => {
 
       {/* Twelth Content  Start */}
 
-      <div className="bg-[#F4F4EA]">
+      <div className="bg-white">
         <div className="animated md:px-20">
           <div className="animated container lg:px-20 xl:px-20 md:p-14 p-8">
             <div className="row">
@@ -906,7 +906,7 @@ const Skills = () => {
       </div>
       {/* Twelth Content  End */}
         {/* Tenth Content Start */}
-        <div className="bg-[#F4F4EA]">
+        <div className="bg-white">
         <div className="md:px-20">
           <div className="canimated ontainer lg:px-20 xl:px-20 md:p-14 p-8">
             <div className="row">
@@ -971,7 +971,7 @@ const Skills = () => {
 
          {/* Eleventh Content Start */}
 
-         <div className="bg-[#F4F4EA]">
+         <div className="bg-white">
         <div className="md:px-20">
           <div className="animated container lg:px-20 xl:px-20 md:p-14 p-8">
             <div className="row">
