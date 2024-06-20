@@ -126,7 +126,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, add }) => {
             <p className="text-base text-gray-700">{CardDescription}</p>
             {date && (
               <Link // Change <a> to <Link>
-                className="mt-3 inline-block rounded bg-primary px-4 py-1 text-center text-xs font-semibold leading-loose text-white"
+                className="my-3 inline-block rounded bg-primary px-4 py-1 text-center text-xs font-semibold leading-loose text-white"
                 to={`/${add}`} // Change href to to
               >
                 {date} <span aria-hidden="true">&rarr;</span>

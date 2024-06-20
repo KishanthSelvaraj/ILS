@@ -17,6 +17,7 @@ import { IoIosWater, IoIosHammer, IoIosPhonePortrait } from "react-icons/io";
 import flow from "/flow2.jpg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
+import Marquee from 'react-fast-marquee';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -130,6 +131,12 @@ const Cost = () => {
       );
     });
   }, []);
+  const Card = ({ number, text }) => (
+    <div className="bg-[#1E2634] border border-gray-300 rounded-lg text-center  w-64 h-64 p-4 mx-4 md:w-64 md:h-64 flex flex-col items-center justify-center">
+      <div className="text-4xl font-bold mb-8 bg-[#007dbd] w-12 h-12 rounded-full text-white">{number}</div>
+      <div className="text-lg leading-tight text-white">{text}</div>
+    </div>
+  );
   return (
     <div className="md:py-20 py-20">
       <div>
@@ -181,70 +188,7 @@ const Cost = () => {
           </div>
         </div>
 
-        {/* Timeline Content Start */}
-        <div>
-          <div>
-            <h3 className="text-black  text-center font-bold my-4 text-xl  md:text-xl lg:text-xl xl:text-3xl xxl:text-3xl">
-              ILS cost containment areas
-            </h3>
-          </div>
-          <div className="flex items-center justify-center md:mt-5">
-          
-          </div>
-          <div className="ml-4">
-            {activeStep === 1 && (
-              <div className="mx-auto mt-8 max-w-2xl sm:mt-10 lg:mt-14 lg:max-w-6xl">
-                <dl className="grid max-w-xl grid-cols-1 gap-x-32 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-                  {features1.map((feature) => (
-                    <div
-                      key={feature.name}
-                      className="relative pl-16 text-left "
-                    >
-                      <dt className=" text-base font-bold leading-7 text-gray-900 ">
-                        <div className=" absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-[#007dbd]">
-                          <feature.icon
-                            className="animated h-6 w-6 text-white "
-                            aria-hidden="true"
-                          />
-                        </div>
-                        {feature.name}
-                      </dt>
-                      <dd className="animated mt-2  text-sm leading-7 text-gray-600">
-                        {feature.description}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            )}
-            {activeStep === 2 && (
-              <div className="mx-auto mt-8 max-w-2xl sm:mt-10 lg:mt-14 lg:max-w-6xl">
-                <dl className="grid max-w-xl grid-cols-1 gap-x-32 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-                  {features.map((feature) => (
-                    <div
-                      key={feature.name}
-                      className="relative pl-16 text-left  "
-                    >
-                      <dt className="text-base font-bold leading-7 text-gray-900 ">
-                        <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-[#007dbd]">
-                          <feature.icon
-                            className="h-6 w-6 text-white"
-                            aria-hidden="true"
-                          />
-                        </div>
-                        {feature.name}
-                      </dt>
-                      <dd className="mt-2  text-sm leading-7 text-gray-600">
-                        {feature.description}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            )}
-          </div>
-        </div>
-        {/* Timeline Content End */}
+       
 
         {/* Cards Layout Start */}
         <div className="bg-[#1E2634] md:my-10 lg:my-10 my-5">
@@ -331,14 +275,88 @@ const Cost = () => {
           </div>
         </div>
         {/* Cards Layout End */}
-
+ {/* Timeline Content Start */}
+ <div className="pb-10">
+          <div>
+            <h3 className="text-black  text-center font-bold my-4 text-xl  md:text-xl lg:text-xl xl:text-3xl xxl:text-3xl ">
+              ILS cost containment areas
+            </h3>
+          </div>
+          <div className="flex items-center justify-center md:mt-5">
+          
+          </div>
+          <div className="ml-4">
+            {activeStep === 1 && (
+              <div className="mx-auto mt-8 max-w-2xl sm:mt-10 lg:mt-14 lg:max-w-6xl">
+                <dl className="grid max-w-xl grid-cols-1 gap-x-32 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                  {features1.map((feature) => (
+                    <div
+                      key={feature.name}
+                      className="relative pl-16 text-left "
+                    >
+                      <dt className=" text-base font-bold leading-7 text-gray-900 ">
+                        <div className=" absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-[#007dbd]">
+                          <feature.icon
+                            className="animated h-6 w-6 text-white "
+                            aria-hidden="true"
+                          />
+                        </div>
+                        {feature.name}
+                      </dt>
+                      <dd className="animated mt-2  text-sm leading-7 text-gray-600">
+                        {feature.description}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            )}
+            {activeStep === 2 && (
+              <div className="mx-auto mt-8 max-w-2xl sm:mt-10 lg:mt-14 lg:max-w-6xl">
+                <dl className="grid max-w-xl grid-cols-1 gap-x-32 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                  {features.map((feature) => (
+                    <div
+                      key={feature.name}
+                      className="relative pl-16 text-left  "
+                    >
+                      <dt className="text-base font-bold leading-7 text-gray-900 ">
+                        <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-[#007dbd]">
+                          <feature.icon
+                            className="h-6 w-6 text-white"
+                            aria-hidden="true"
+                          />
+                        </div>
+                        {feature.name}
+                      </dt>
+                      <dd className="mt-2  text-sm leading-7 text-gray-600">
+                        {feature.description}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            )}
+          </div>
+        </div>
+        {/* Timeline Content End */}
         <div className="anime">
-          <h3 className=" text-center text-black font-bold my-lg-4 my-2 text-xl  md:text-xl lg:text-xl xl:text-3xl xxl:text-3xl">
+          <h3 className=" text-center text-black font-bold my-lg-6   my-5 text-xl  md:text-xl lg:text-xl xl:text-3xl xxl:text-3xl ">
             ILS Cost Containment Process Flow
           </h3>
-          <div className="animated container flex items-center justify-center">
+          {/* <div className="animated container flex items-center justify-center">
             <img src={flow} alt="" className="lg:w-10/12" />
-          </div>
+          </div> */}
+           <div className="mx-10 md:mx-auto md:px-40">
+      {/* <h1 className="text-3xl font-bold mb-8">Marquee with 6 Cards</h1> */}
+      <Marquee gradient={false}>
+        <Card number={1} text="Gather data from clients and suppliers, compile information." />
+        <Card number={2} text="Conduct detailed analysis by specialists, examine findings." />
+        <Card number={3} text="Evaluate vendors and manage auctions, oversee bidding process." />
+        <Card number={4} text="Present findings and results, summarize outcomes." />
+        <Card number={5} text="Implement changes with chosen vendors, execute modifications." />
+        <Card number={6} text="Regular audit to sustain the savings through 2-yr term or more." />
+      </Marquee>
+    </div>
            {/* vertical timeline start */}
  
     
